@@ -30,10 +30,10 @@ package Empire.Resources
 			for (var i:uint = 0; i < split.length;++i)
 			{
 				var parts:Array = split[i].split("\t");
-				name.push(StringUtil.trim(parts[0]));
-				nameF.push(StringUtil.trim(parts[1]));
-				nameCnt.push(StringUtil.trim(parts[2]));
-				nameDesc.push(StringUtil.trim(parts[3]));
+				name[i+1]=(StringUtil.trim(parts[0]));
+				nameF[i+1]=(StringUtil.trim(parts[1]));
+				nameCnt[i+1]=(StringUtil.trim(parts[2]));
+				nameDesc[i+1]=(StringUtil.trim(parts[3]));
 			}
 		}
 		

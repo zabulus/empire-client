@@ -11,6 +11,7 @@ import Engine.*;
 import fl.controls.*;
 import flash.display.*;
 import flash.display3D.textures.*;
+import flash.external.ExternalInterface;
 import flash.geom.*;
 import flash.system.*;
 import flash.text.*;
@@ -19,7 +20,7 @@ import flash.utils.*;
 
 
 // В текстах учесть
-// �?з гиперпространства выходим
+// Из гиперпространства выходим
 // В гиперпространство входим
 
 public class Common
@@ -244,7 +245,7 @@ public class Common
 	static public const UserRankAce:uint = 5; // захватить лички 2 игроков ранга не ниже Ace.
 	static public const UserRankCommander:uint = 6; // захватить галактику
 
-	static public const UserRankName:Array = ["Новичок", "Кадет", "Пилот", "Капитан", "�?стребитель", "Ас", "Командор"];
+	static public const UserRankName:Array = ["Новичок", "Кадет", "Пилот", "Капитан", "Истребитель", "Ас", "Командор"];
 
 	static public const RaceNone:uint=0;
 	static public const RaceGrantar:uint=1;
@@ -1602,7 +1603,7 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 		0,0
 	];
 	
-	static public const UnionTypeName:Array =	["None", "Альянс", "Пираты", "Клан", "Наемники", "Торговцы", "�?мперия", "Республика"];
+	static public const UnionTypeName:Array =	["None", "Альянс", "Пираты", "Клан", "Наемники", "Торговцы", "Империя", "Республика"];
 
 	static public const ItemBonusName:Array =	["None", "Armour corvette", "Armour cruiser", "Armour dreadnought", "Armour devastator", "Accuracy corvette", "Accuracy cruiser", "Accuracy dreadnought", "Accuracy devastator"];
 
@@ -1611,8 +1612,8 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 	static public const News:Object = {
 		Export:"Продажа <Cnt> <Goods> по цене <Price> cr за <Step> ед. Созвездие игрока <F> (<FUnion>).",
 		Import:"Покупка <Cnt> <Goods> по цене <Price> cr за <Step> ед. Созвездие игрока <F> (<FUnion>).",
-		Export2:"Продажа <Cnt> <Goods> по цене <Price> cr за <Step> ед. Созвездие <Cotl>. �?грок <F> (<FUnion>).",
-		Import2:"Покупка <Cnt> <Goods> по цене <Price> cr за <Step> ед. Созвездие <Cotl>. �?грок <F> (<FUnion>).",
+		Export2:"Продажа <Cnt> <Goods> по цене <Price> cr за <Step> ед. Созвездие <Cotl>. Игрок <F> (<FUnion>).",
+		Import2:"Покупка <Cnt> <Goods> по цене <Price> cr за <Step> ед. Созвездие <Cotl>. Игрок <F> (<FUnion>).",
 		CombatBegin:"Нападение <F> (<FUnion>) на <S> (<SUnion>).",
 		DuelBegin:"Поединок между <F> (<FUnion>) и <S> (<SUnion>).",
 		CombatWinAtk:"<F> (<FUnion>) успешно атаковал <S> (<SUnion>).",
@@ -1630,7 +1631,7 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 		CotlCtrl2:"Альянс <FUnion>, благодаря игроку <F>, забрал контроль над созвездием <Cotl> у альянса <SUnion>. Получено <Exp> опыта.",
 		CotlPrepare:"Через <Period> минут откроется созвездие <Cotl>. Награда за захват: <Exp> опыта.",
 		CotlReady:"Открылось созвездие <Cotl>. Награда за захват: <Exp> опыта.",
-		HomeworldCapture:"�?грок <F> (<FUnion>) захватил столицу игрока <S> (<SUnion>). Получено <Exp> опыта.",
+		HomeworldCapture:"Игрок <F> (<FUnion>) захватил столицу игрока <S> (<SUnion>). Получено <Exp> опыта.",
 		Invasion:"Вторжение игрока <F> (<FUnion>) в созвездие игрока <S> (<SUnion>).",
 		Battle:"Столкновение между <F> (<FUnion>) и <S> (<SUnion>) в созвездии <Cotl>.",
 		Battle2:"Столкновение между <F> (<FUnion>) и <S> (<SUnion>) в созвездии игрока <Cotl>."
@@ -1835,16 +1836,16 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 		UserListOnlineDate:"Онлайн (по времени)",
 		UserListOnlineUnion:"Альянс",
 		UserListOnlineNutral:"Нейтральные",
-		UserListIgnore:"�?гнорируемые",
-		Ignore:"�?гнорировать",
+		UserListIgnore:"Игнорируемые",
+		Ignore:"Игнорировать",
 		IgnoreOut:"Удалить из списка",
-		IgnoreGeneral:"�?гнорировать: Общий чат",
-		IgnoreClan:"�?гнорировать: Альянсовый чат",
-		IgnoreWhisper:"�?гнорировать: Личные сообщения"
+		IgnoreGeneral:"Игнорировать: Общий чат",
+		IgnoreClan:"Игнорировать: Альянсовый чат",
+		IgnoreWhisper:"Игнорировать: Личные сообщения"
 	};
 
 	static public const TxtEdit:Object = {
-		ChangeCnt:"�?зменить количество",
+		ChangeCnt:"Изменить количество",
 		CotlSet:"Параметры созвездия",
 		MapEdit:"Редактировать карту",
 		MapSave:"Сохранить карту",
@@ -1858,8 +1859,8 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 //		MapUnloadNormalQuery:"Вы хотите выгрузить игровую карту?",
 		MapDelete:"Удалить карту",
 		MapDeleteQuery:"Для удаления карты введите слово 'DELETE'",
-		MapChangeOptions:"�?зменить настройки карты",
-		MapChangeOptionsEx:"�?зменить настройки карты 2",
+		MapChangeOptions:"Изменить настройки карты",
+		MapChangeOptionsEx:"Изменить настройки карты 2",
 		MapChangeCode:"Код",
 		MapChangeConsumption:"Потребление",
 		MapChangeViewStat:"Статистика",
@@ -1912,7 +1913,7 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 		MapChangeOpsPlayerExp:"Опыт за корабли игроков",
 		MapChangeOpsTeamOwner:"Команда владельцев",
 		MapChangeOpsTeamEnemy:"Команда врагов",
-		MapChangeSize:"�?зменить размер карты",
+		MapChangeSize:"Изменить размер карты",
 		MapChangeRandomizeNeutral:"Рандомезировать нейтралов",
 		MapChangeRandomizeNeutralQuery:"На основании расы планеты спавнятся нейтральные корабли соответствующей расы. Вы уверены, что хотите случайно назначить расу каждой планете? Все нейтральные корабли будут удалены.",
 		MapChangeRandomizeElement:"Рандомезировать специализацию",
@@ -1922,14 +1923,14 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 		MapChangeSizeTop:"Сверху",
 		MapChangeSizeBottom:"Снизу",
 		Add:"Добавить", 
-		ButAdd:"ДОБАВ�?ТЬ",
+		ButAdd:"ДОБАВИТЬ",
 		AddPlanet:"Создать планетоид",
-		EditPlanet:"�?зменить планетоид",
+		EditPlanet:"Изменить планетоид",
 		DeletePlanet:"Удалить планетоид",
 		DeletePlanetQuery:"Вы действительно хотите удалить планетоид?",
-		EditPlanetName:"�?зменить описание планетоида",
+		EditPlanetName:"Изменить описание планетоида",
 		EditPlanetSpawn:"Спавн звеньев",
-		SpawnSave:"�?зменить",
+		SpawnSave:"Изменить",
 		SpawnPageBase:"Общие",
 		SpawnPageGroup:"Звенья",
 		SpawnPageEq:"Снаряжение",
@@ -1966,15 +1967,15 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 		CloseWormhole:"Закрыть червоточину",
 		OpenPlanet:"Открыть планетоид",
 		AddShip:"Создать звено кораблей",
-		EditShip:"�?зменить звено кораблей",
+		EditShip:"Изменить звено кораблей",
 		DeleteShip:"Удалить звено кораблей",
 		DeleteShipQuery:"Вы действительно хотите удалить звено кораблей?",
-		EditOrbitItem:"�?зменить товар", 
+		EditOrbitItem:"Изменить товар", 
 		DeleteOrbitItem:"Удалить товар", 
 		DeleteOrbitItemQuery:"Вы действительно хотите удалить товар?", 
 		Add:"Создать",
-		Edit:"�?зменить",
-		ButEdit:"�?ЗМЕН�?ТЬ",
+		Edit:"Изменить",
+		ButEdit:"ИЗМЕНИТЬ",
 		PlanetType:"Тип",
 		PlanetSun:"Звезда",
 		PlanetPulsar:"Пульсар",
@@ -2000,7 +2001,7 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 		CptAI0:"CptAI 1",
 		CptAI1:"CptAI 2",
 		CptAI2:"CptAI 3",
-		Level:"�?нфраструктура",
+		Level:"Инфраструктура",
 		Race:"Раса",
 		Cnt:"Количество",
 		Module:"Модули",
@@ -2031,7 +2032,7 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 		FleetAddShip:"Добавить корабли",
 		FormTeamRelCaption:"Отношения команд",
 		Team:"Команда",
-		FormItemImgCpation:"�?зображения итемов",
+		FormItemImgCpation:"Изображения итемов",
 		FormItemManagerCpation:"Редактор итемов",
 		EditItemCaption:"Параметры итема",
 		ItemName:"Название",
@@ -2040,13 +2041,13 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 		ItemLvl:"Уровень",
 		ItemStackMax:"Размер стека",
 		ChangeCotlPos:"Перенести созвездие",
-		ErrorCotlInGameMode:"[crt]ОШ�?БКА![/crt] Созвездие в игровом режиме.",
-		ErrorCotlInEditMode:"[crt]ОШ�?БКА![/crt] Созвездие в режиме редактирования.",
-		ErrorCotlInDevelopment:"[crt]ОШ�?БКА![/crt] Созвездие в режиме разработки.",
+		ErrorCotlInGameMode:"[crt]ОШИБКА![/crt] Созвездие в игровом режиме.",
+		ErrorCotlInEditMode:"[crt]ОШИБКА![/crt] Созвездие в режиме редактирования.",
+		ErrorCotlInDevelopment:"[crt]ОШИБКА![/crt] Созвездие в режиме разработки.",
 		VisAll:"Просмотр для всех",
-		ImportIfEnemy:"�?мпортировать если враг",
+		ImportIfEnemy:"Импортировать если враг",
 		AutoProgress:"Автоматическое развитие",
-		PlayerControl:"�?грок может управлять кораблями",
+		PlayerControl:"Игрок может управлять кораблями",
 		SpaceStyleCaption:"Оформление созвездия",
 		SpaceStyleMain:"Общие",
 		SpaceStyleBGLayer1:"Слой 1",
@@ -2158,7 +2159,7 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 		Battle:"Битва между игроками [clr]<Owner1>[/clr] и [clr]<Owner2>[/clr].", 
 		Defence:"Защита игрока [clr]<Owner1>[/clr] от игрока [clr]<Owner2>[/clr].", 
 		Period:"Продолжительность", 
-		UserRecv:"�?грок [clr]<Owner>[/clr] заработал [clr]<Score>[/clr] очков боевой славы, а также [clr]<Exp>[/clr] ед. опыта.", 
+		UserRecv:"Игрок [clr]<Owner>[/clr] заработал [clr]<Score>[/clr] очков боевой славы, а также [clr]<Exp>[/clr] ед. опыта.", 
 		UserLost:"Потери игрока [clr]<Owner>[/clr]", 
 		TransportLost:"Транспортов", 
 		CorvetteLost:"Корветов", 
@@ -2215,8 +2216,7 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 		DirName[DirEmpireMax]="Образование"; // Агрокультура Образование
 		DirName[DirEnclaveMax]="Патриотизм";
 		DirName[DirColonyMax]="Воинственность";
-		//DirName[DirPlanetLevelMax]="�?ндустриализация";
-		DirName[DirShipMassMax] = "Логистика";// "�?ндустриализация";
+		DirName[DirShipMassMax] = "Логистика";// "Индустриализация";
 		DirName[DirShipSpeed]="Двигатели";
 		DirName[DirPlanetProtect]="Оборона";
 		DirName[DirCaptureSlow]="Сопротивление";
@@ -2491,10 +2491,10 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 		DirParSuf[DirSciBaseRepair]="";
 		DirParSuf[DirSciBaseStabilizer]="%";
 
-		DirEmpireMaxDesc.push("�?мперия может состоять из <Val> планет.");
+		DirEmpireMaxDesc.push("Империя может состоять из <Val> планет.");
 		DirEnclaveMaxDesc.push("Анклав может состоять из <Val> планет.");
 		DirColonyMaxDesc.push("Вы можете иметь <Val> колониальных планет.");
-		//DirPlanetLevelMaxDesc.push("�?нфраструктура планет может быть развита до <Val> уровня.");
+		//DirPlanetLevelMaxDesc.push("Инфраструктура планет может быть развита до <Val> уровня.");
 		//DirShipMassMaxDesc.push("Каждая планета в империи или анклаве[br]может содержать до <Val> кт кораблей.");
 		DirShipMassMaxDesc.push("Каждая планета в империи/анклаве может содержать до <Val>/<Val2> кт[br]кораблей-атаки и <Val3> кт кораблей-обороны.");
 		DirShipSpeedDesc.push("Корабли развивают <Val>% скорость.");
@@ -2828,7 +2828,7 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 		ChangeWordForNews1["Продовольствие"] = "продовольствия";
 		ChangeWordForNews1["Плазма"] = "плазмы";
 		ChangeWordForNews1["Техника"] = "техника";
-		ChangeWordForNews1["�?нженеры"] = "инженера";
+		ChangeWordForNews1["Инженеры"] = "инженера";
 		ChangeWordForNews1["Механик"] = "механика";
 		ChangeWordForNews1["Навигатор"] = "навигатора";
 		ChangeWordForNews1["Кварковые ядра"] = "кваркового ядра";
@@ -2857,7 +2857,7 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 		ChangeWordForNews2["Продовольствие"] = "продовольствия";
 		ChangeWordForNews2["Плазма"] = "плазмы";
 		ChangeWordForNews2["Техника"] = "техника";
-		ChangeWordForNews2["�?нженеры"] = "инженера";
+		ChangeWordForNews2["Инженеры"] = "инженера";
 		ChangeWordForNews2["Механик"] = "механика";
 		ChangeWordForNews2["Навигатор"] = "навигатора";
 		ChangeWordForNews2["Кварковые ядра"] = "кварковых ядра";
@@ -2886,7 +2886,7 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 		ChangeWordForNews5["Продовольствие"] = "продовольствия";
 		ChangeWordForNews5["Плазма"] = "плазмы";
 		ChangeWordForNews5["Техника"] = "техники";
-		ChangeWordForNews5["�?нженеры"] = "инженеров";
+		ChangeWordForNews5["Инженеры"] = "инженеров";
 		ChangeWordForNews5["Механик"] = "механиков";
 		ChangeWordForNews5["Навигатор"] = "навигаторов";
 		ChangeWordForNews5["Кварковые ядра"] = "кварковых ядер";
