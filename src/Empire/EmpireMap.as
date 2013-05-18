@@ -12194,30 +12194,17 @@ at flash.net::URLLoader/onComplete()*/
 			else if (dir == Common.DirShipMassMax) ar = Common.DirShipMassMaxLvlEmp;
 			else if(dir==Common.DirShipSpeed) ar=Common.DirShipSpeedLvlRC;
 			else if(dir==Common.DirPlanetProtect) ar=Common.DirPlanetProtectLvlRC;
-			else if(dir==Common.DirCaptureSlow) ar=Common.DirCaptureSlowLvl;
-//				else if(dir==Common.DirModuleSpeed) ar=Common.DirModuleSpeedLvl;	
-//				else if(dir==Common.DirResSpeed) ar=Common.DirResSpeedLvlRC;
-//				else if(dir==Common.DirSupplyNormal) ar=Common.DirSupplyNormalLvl;
-//				else if(dir==Common.DirSupplyMuch) ar=Common.DirSupplyMuchLvl;
-//				else if(dir==Common.DirModuleMax) ar=Common.DirModuleMaxLvl;
-//				else if(dir==Common.DirResMax) ar=Common.DirResMaxLvl;
-//				else if(dir==Common.DirCitadelCost) ar=Common.DirCitadelCostLvl;
-//				else if(dir==Common.DirPlanetLavelCost) ar=Common.DirPlanetLavelCostLvl;
-			
+			else if(dir==Common.DirCaptureSlow) ar=Common.DirCaptureSlowLvl;			
 			else if(dir==Common.DirTransportPrice) ar=Common.DirTransportPriceLvl;
 			else if(dir==Common.DirTransportCnt) ar=Common.DirTransportCntLvl;
-			//else if(dir==Common.DirTransportSupply) ar=Common.DirTransportSupplyLvl;
 			else if(dir==Common.DirTransportMass) ar=Common.DirTransportMassLvl;
-//				else if(dir==Common.DirTransportFuel) ar=Common.DirTransportFuelLvl;
 			else if(dir==Common.DirTransportArmour) ar=Common.DirTransportArmourLvl;
 			else if(dir==Common.DirTransportWeapon) ar=Common.DirTransportWeaponLvl;
 			else if(dir==Common.DirTransportCargo) ar=Common.DirTransportCargoLvl;
 
 			else if(dir==Common.DirCorvettePrice) ar=Common.DirCorvettePriceLvl;
 			else if(dir==Common.DirCorvetteCnt) ar=Common.DirCorvetteCntLvl;
-			//else if(dir==Common.DirCorvetteSupply) ar=Common.DirCorvetteSupplyLvl;
 			else if(dir==Common.DirCorvetteMass) ar=Common.DirCorvetteMassLvl;
-//				else if(dir==Common.DirCorvetteFuel) ar=Common.DirCorvetteFuelLvl;
 			else if(dir==Common.DirCorvetteArmour) ar=Common.DirCorvetteArmourLvl;
 			else if(dir==Common.DirCorvetteWeapon) ar=Common.DirCorvetteWeaponLvl;
 			else if(dir==Common.DirCorvetteAccuracy) ar=Common.DirCorvetteAccuracyLvl;
@@ -12226,9 +12213,7 @@ at flash.net::URLLoader/onComplete()*/
 			else if(dir==Common.DirCruiserAccess) ar=Common.DirCruiserAccessLvl;
 			else if(dir==Common.DirCruiserPrice) ar=Common.DirCruiserPriceLvl;
 			else if(dir==Common.DirCruiserCnt) ar=Common.DirCruiserCntLvl;
-			//else if(dir==Common.DirCruiserSupply) ar=Common.DirCruiserSupplyLvl;
 			else if(dir==Common.DirCruiserMass) ar=Common.DirCruiserMassLvl;
-//				else if(dir==Common.DirCruiserFuel) ar=Common.DirCruiserFuelLvl;
 			else if(dir==Common.DirCruiserArmour) ar=Common.DirCruiserArmourLvl;
 			else if(dir==Common.DirCruiserWeapon) ar=Common.DirCruiserWeaponLvl;
 			else if(dir==Common.DirCruiserAccuracy) ar=Common.DirCruiserAccuracyLvl;
@@ -12236,18 +12221,14 @@ at flash.net::URLLoader/onComplete()*/
 			else if(dir==Common.DirDreadnoughtAccess) ar=Common.DirDreadnoughtAccessLvl;
 			else if(dir==Common.DirDreadnoughtPrice) ar=Common.DirDreadnoughtPriceLvl;
 			else if(dir==Common.DirDreadnoughtCnt) ar=Common.DirDreadnoughtCntLvl;
-			//else if(dir==Common.DirDreadnoughtSupply) ar=Common.DirDreadnoughtSupplyLvl;
 			else if(dir==Common.DirDreadnoughtMass) ar=Common.DirDreadnoughtMassLvl;
-//				else if(dir==Common.DirDreadnoughtFuel) ar=Common.DirDreadnoughtFuelLvl;
 			else if(dir==Common.DirDreadnoughtArmour) ar=Common.DirDreadnoughtArmourLvl;
 			else if(dir==Common.DirDreadnoughtWeapon) ar=Common.DirDreadnoughtWeaponLvl;
 			else if(dir==Common.DirDreadnoughtAccuracy) ar=Common.DirDreadnoughtAccuracyLvl;
 
 			else if(dir==Common.DirInvaderPrice) ar=Common.DirInvaderPriceLvl;
 			else if(dir==Common.DirInvaderCnt) ar=Common.DirInvaderCntLvl;
-			//else if(dir==Common.DirInvaderSupply) ar=Common.DirInvaderSupplyLvl;
 			else if(dir==Common.DirInvaderMass) ar=Common.DirInvaderMassLvl;
-//				else if(dir==Common.DirInvaderFuel) ar=Common.DirInvaderFuelLvl;
 			else if(dir==Common.DirInvaderArmour) ar=Common.DirInvaderArmourLvl;
 			else if(dir==Common.DirInvaderWeapon) ar=Common.DirInvaderWeaponLvl;
 			else if(dir==Common.DirInvaderCaptureSpeed) ar=Common.DirInvaderCaptureSpeedLvl;
@@ -12255,9 +12236,7 @@ at flash.net::URLLoader/onComplete()*/
 			else if(dir==Common.DirDevastatorAccess) ar=Common.DirDevastatorAccessLvl;
 			else if(dir==Common.DirDevastatorPrice) ar=Common.DirDevastatorPriceLvl;
 			else if(dir==Common.DirDevastatorCnt) ar=Common.DirDevastatorCntLvl;
-			//else if(dir==Common.DirDevastatorSupply) ar=Common.DirDevastatorSupplyLvl;
 			else if(dir==Common.DirDevastatorMass) ar=Common.DirDevastatorMassLvl;
-//				else if(dir==Common.DirDevastatorFuel) ar=Common.DirDevastatorFuelLvl;
 			else if(dir==Common.DirDevastatorArmour) ar=Common.DirDevastatorArmourLvl;
 			else if(dir==Common.DirDevastatorWeapon) ar=Common.DirDevastatorWeaponLvl;
 			else if(dir==Common.DirDevastatorAccuracy) ar=Common.DirDevastatorAccuracyLvl;
@@ -12266,7 +12245,6 @@ at flash.net::URLLoader/onComplete()*/
 			else if(dir==Common.DirWarBaseAccess) ar=Common.DirWarBaseAccessLvl;
 			else if(dir==Common.DirWarBasePrice) ar=Common.DirWarBasePriceLvl;
 			else if(dir==Common.DirWarBaseCnt) ar=Common.DirWarBaseCntLvl;
-			//else if(dir==Common.DirWarBaseSupply) ar=Common.DirWarBaseSupplyLvl;
 			else if(dir==Common.DirWarBaseMass) ar=Common.DirWarBaseMassLvl;
 			else if(dir==Common.DirWarBaseArmour) ar=Common.DirWarBaseArmourLvl;
 			else if(dir==Common.DirWarBaseAccuracy) ar=Common.DirWarBaseAccuracyLvl;
@@ -12276,7 +12254,6 @@ at flash.net::URLLoader/onComplete()*/
 			else if(dir==Common.DirShipyardAccess) ar=Common.DirShipyardAccessLvl;
 			else if(dir==Common.DirShipyardPrice) ar=Common.DirShipyardPriceLvl;
 			else if(dir==Common.DirShipyardCnt) ar=Common.DirShipyardCntLvl;
-			//else if(dir==Common.DirShipyardSupply) ar=Common.DirShipyardSupplyLvl;
 			else if(dir==Common.DirShipyardMass) ar=Common.DirShipyardMassLvl;
 			else if(dir==Common.DirShipyardArmour) ar=Common.DirShipyardArmourLvl;
 			else if(dir==Common.DirShipyardAccuracy) ar=Common.DirShipyardAccuracyLvl;
@@ -12286,7 +12263,6 @@ at flash.net::URLLoader/onComplete()*/
 			else if(dir==Common.DirSciBaseAccess) ar=Common.DirSciBaseAccessLvl;
 			else if(dir==Common.DirSciBasePrice) ar=Common.DirSciBasePriceLvl;
 			else if(dir==Common.DirSciBaseCnt) ar=Common.DirSciBaseCntLvl;
-			//else if(dir==Common.DirSciBaseSupply) ar=Common.DirSciBaseSupplyLvl;
 			else if(dir==Common.DirSciBaseMass) ar=Common.DirSciBaseMassLvl;
 			else if(dir==Common.DirSciBaseArmour) ar=Common.DirSciBaseArmourLvl;
 			else if(dir==Common.DirSciBaseAccuracy) ar=Common.DirSciBaseAccuracyLvl;
@@ -12294,7 +12270,6 @@ at flash.net::URLLoader/onComplete()*/
 			else if (dir == Common.DirSciBaseStabilizer) ar = Common.DirSciBaseStabilizerLvl;
 
 			else if (dir == Common.DirQuarkBaseAccess) ar = Common.DirQuarkBaseAccessLvl;
-			//else if (dir == Common.DirQuarkBaseMass) ar = Common.DirQuarkBaseMassLvl;
 			else if (dir == Common.DirQuarkBaseWeapon) ar = Common.DirQuarkBaseWeaponLvl;
 			else if (dir == Common.DirQuarkBaseAccuracy) ar = Common.DirQuarkBaseAccuracyLvl;
 			else if (dir == Common.DirQuarkBaseArmour) ar = Common.DirQuarkBaseArmourLvl;
@@ -12311,34 +12286,21 @@ at flash.net::URLLoader/onComplete()*/
 			if(dir==Common.DirEmpireMax) ar=Common.DirEmpireMaxLvl;
 			else if(dir==Common.DirEnclaveMax) ar=Common.DirEnclaveMaxLvl;
 			else if(dir==Common.DirColonyMax) ar=Common.DirColonyMaxLvl;
-			//else if(dir==Common.DirPlanetLevelMax) ar=Common.DirPlanetLevelMaxLvl;
 			else if(dir==Common.DirShipMassMax) ar=Common.DirShipMassMaxLvlEmp;
 			else if(dir==Common.DirShipSpeed) ar=Common.DirShipSpeedLvl;
 			else if(dir==Common.DirPlanetProtect) ar=Common.DirPlanetProtectLvl;
 			else if(dir==Common.DirCaptureSlow) ar=Common.DirCaptureSlowLvl;
-//				else if(dir==Common.DirModuleSpeed) ar=Common.DirModuleSpeedLvl;	
-//				else if(dir==Common.DirResSpeed) ar=Common.DirResSpeedLvl;
-//				else if(dir==Common.DirSupplyNormal) ar=Common.DirSupplyNormalLvl;
-//				else if(dir==Common.DirSupplyMuch) ar=Common.DirSupplyMuchLvl;
-//				else if(dir==Common.DirModuleMax) ar=Common.DirModuleMaxLvl;
-//				else if(dir==Common.DirResMax) ar=Common.DirResMaxLvl;
-//				else if(dir==Common.DirCitadelCost) ar=Common.DirCitadelCostLvl;
-//				else if(dir==Common.DirPlanetLavelCost) ar=Common.DirPlanetLavelCostLvl;
 			
 			else if(dir==Common.DirTransportPrice) ar=Common.DirTransportPriceLvl;
 			else if(dir==Common.DirTransportCnt) ar=Common.DirTransportCntLvl;
-			//else if(dir==Common.DirTransportSupply) ar=Common.DirTransportSupplyLvl;
 			else if(dir==Common.DirTransportMass) ar=Common.DirTransportMassLvl;
-//				else if(dir==Common.DirTransportFuel) ar=Common.DirTransportFuelLvl;
 			else if(dir==Common.DirTransportArmour) ar=Common.DirTransportArmourLvl;
 			else if(dir==Common.DirTransportWeapon) ar=Common.DirTransportWeaponLvl;
 			else if(dir==Common.DirTransportCargo) ar=Common.DirTransportCargoLvl;
 
 			else if(dir==Common.DirCorvettePrice) ar=Common.DirCorvettePriceLvl;
 			else if(dir==Common.DirCorvetteCnt) ar=Common.DirCorvetteCntLvl;
-			//else if(dir==Common.DirCorvetteSupply) ar=Common.DirCorvetteSupplyLvl;
 			else if(dir==Common.DirCorvetteMass) ar=Common.DirCorvetteMassLvl;
-//				else if(dir==Common.DirCorvetteFuel) ar=Common.DirCorvetteFuelLvl;
 			else if(dir==Common.DirCorvetteArmour) ar=Common.DirCorvetteArmourLvl;
 			else if(dir==Common.DirCorvetteWeapon) ar=Common.DirCorvetteWeaponLvl;
 			else if(dir==Common.DirCorvetteAccuracy) ar=Common.DirCorvetteAccuracyLvl;
@@ -12347,9 +12309,7 @@ at flash.net::URLLoader/onComplete()*/
 			else if(dir==Common.DirCruiserAccess) ar=Common.DirCruiserAccessLvl;
 			else if(dir==Common.DirCruiserPrice) ar=Common.DirCruiserPriceLvl;
 			else if(dir==Common.DirCruiserCnt) ar=Common.DirCruiserCntLvl;
-			//else if(dir==Common.DirCruiserSupply) ar=Common.DirCruiserSupplyLvl;
 			else if(dir==Common.DirCruiserMass) ar=Common.DirCruiserMassLvl;
-//				else if(dir==Common.DirCruiserFuel) ar=Common.DirCruiserFuelLvl;
 			else if(dir==Common.DirCruiserArmour) ar=Common.DirCruiserArmourLvl;
 			else if(dir==Common.DirCruiserWeapon) ar=Common.DirCruiserWeaponLvl;
 			else if(dir==Common.DirCruiserAccuracy) ar=Common.DirCruiserAccuracyLvl;
@@ -12357,18 +12317,14 @@ at flash.net::URLLoader/onComplete()*/
 			else if(dir==Common.DirDreadnoughtAccess) ar=Common.DirDreadnoughtAccessLvl;
 			else if(dir==Common.DirDreadnoughtPrice) ar=Common.DirDreadnoughtPriceLvl;
 			else if(dir==Common.DirDreadnoughtCnt) ar=Common.DirDreadnoughtCntLvl;
-			//else if (dir == Common.DirDreadnoughtSupply) ar = Common.DirDreadnoughtSupplyLvl;
 			else if(dir==Common.DirDreadnoughtMass) ar=Common.DirDreadnoughtMassLvl;
-//				else if(dir==Common.DirDreadnoughtFuel) ar=Common.DirDreadnoughtFuelLvl;
 			else if(dir==Common.DirDreadnoughtArmour) ar=Common.DirDreadnoughtArmourLvl;
 			else if(dir==Common.DirDreadnoughtWeapon) ar=Common.DirDreadnoughtWeaponLvl;
 			else if(dir==Common.DirDreadnoughtAccuracy) ar=Common.DirDreadnoughtAccuracyLvl;
 
 			else if(dir==Common.DirInvaderPrice) ar=Common.DirInvaderPriceLvl;
 			else if(dir==Common.DirInvaderCnt) ar=Common.DirInvaderCntLvl;
-			//else if(dir==Common.DirInvaderSupply) ar=Common.DirInvaderSupplyLvl;
 			else if(dir==Common.DirInvaderMass) ar=Common.DirInvaderMassLvl;
-//				else if(dir==Common.DirInvaderFuel) ar=Common.DirInvaderFuelLvl;
 			else if(dir==Common.DirInvaderArmour) ar=Common.DirInvaderArmourLvl;
 			else if(dir==Common.DirInvaderWeapon) ar=Common.DirInvaderWeaponLvl;
 			else if(dir==Common.DirInvaderCaptureSpeed) ar=Common.DirInvaderCaptureSpeedLvl;
@@ -12376,9 +12332,7 @@ at flash.net::URLLoader/onComplete()*/
 			else if(dir==Common.DirDevastatorAccess) ar=Common.DirDevastatorAccessLvl;
 			else if(dir==Common.DirDevastatorPrice) ar=Common.DirDevastatorPriceLvl;
 			else if(dir==Common.DirDevastatorCnt) ar=Common.DirDevastatorCntLvl;
-			//else if(dir==Common.DirDevastatorSupply) ar=Common.DirDevastatorSupplyLvl;
 			else if(dir==Common.DirDevastatorMass) ar=Common.DirDevastatorMassLvl;
-//				else if(dir==Common.DirDevastatorFuel) ar=Common.DirDevastatorFuelLvl;
 			else if(dir==Common.DirDevastatorArmour) ar=Common.DirDevastatorArmourLvl;
 			else if(dir==Common.DirDevastatorWeapon) ar=Common.DirDevastatorWeaponLvl;
 			else if(dir==Common.DirDevastatorAccuracy) ar=Common.DirDevastatorAccuracyLvl;
@@ -12387,7 +12341,6 @@ at flash.net::URLLoader/onComplete()*/
 			else if(dir==Common.DirWarBaseAccess) ar=Common.DirWarBaseAccessLvl;
 			else if(dir==Common.DirWarBasePrice) ar=Common.DirWarBasePriceLvl;
 			else if(dir==Common.DirWarBaseCnt) ar=Common.DirWarBaseCntLvl;
-			//else if(dir==Common.DirWarBaseSupply) ar=Common.DirWarBaseSupplyLvl;
 			else if(dir==Common.DirWarBaseMass) ar=Common.DirWarBaseMassLvl;
 			else if(dir==Common.DirWarBaseArmour) ar=Common.DirWarBaseArmourLvl;
 			else if(dir==Common.DirWarBaseAccuracy) ar=Common.DirWarBaseAccuracyLvl;
@@ -12397,7 +12350,6 @@ at flash.net::URLLoader/onComplete()*/
 			else if(dir==Common.DirShipyardAccess) ar=Common.DirShipyardAccessLvl;
 			else if(dir==Common.DirShipyardPrice) ar=Common.DirShipyardPriceLvl;
 			else if(dir==Common.DirShipyardCnt) ar=Common.DirShipyardCntLvl;
-			//else if (dir == Common.DirShipyardSupply) ar = Common.DirShipyardSupplyLvl;
 			else if(dir==Common.DirShipyardMass) ar=Common.DirShipyardMassLvl;
 			else if(dir==Common.DirShipyardArmour) ar=Common.DirShipyardArmourLvl;
 			else if(dir==Common.DirShipyardAccuracy) ar=Common.DirShipyardAccuracyLvl;
@@ -12407,7 +12359,6 @@ at flash.net::URLLoader/onComplete()*/
 			else if(dir==Common.DirSciBaseAccess) ar=Common.DirSciBaseAccessLvl;
 			else if(dir==Common.DirSciBasePrice) ar=Common.DirSciBasePriceLvl;
 			else if(dir==Common.DirSciBaseCnt) ar=Common.DirSciBaseCntLvl;
-			//else if(dir==Common.DirSciBaseSupply) ar=Common.DirSciBaseSupplyLvl;
 			else if(dir==Common.DirSciBaseMass) ar=Common.DirSciBaseMassLvl;
 			else if(dir==Common.DirSciBaseArmour) ar=Common.DirSciBaseArmourLvl;
 			else if(dir==Common.DirSciBaseAccuracy) ar=Common.DirSciBaseAccuracyLvl;
@@ -12415,7 +12366,6 @@ at flash.net::URLLoader/onComplete()*/
 			else if(dir==Common.DirSciBaseStabilizer) ar=Common.DirSciBaseStabilizerLvl;
 			
 			else if (dir == Common.DirQuarkBaseAccess) ar = Common.DirQuarkBaseAccessLvl;
-			//else if (dir == Common.DirQuarkBaseMass) ar = Common.DirQuarkBaseMassLvl;
 			else if (dir == Common.DirQuarkBaseWeapon) ar = Common.DirQuarkBaseWeaponLvl;
 			else if (dir == Common.DirQuarkBaseAccuracy) ar = Common.DirQuarkBaseAccuracyLvl;
 			else if (dir == Common.DirQuarkBaseArmour) ar = Common.DirQuarkBaseArmourLvl;

@@ -1,0 +1,23 @@
+BreakQuestQuery:Вы действительно хотите отказаться от задания?
+Task:Цель
+TaskPlanet:на <Val> планетах
+TaskPlanetNeutral:нейтральных
+TaskPlanetPlayer:своих
+TaskPlanetFriend:дружественных
+TaskPlanetEnemy:вражеских
+In:в
+InCotl:созвездии
+InCotlUser:созвездии игрока
+CotlHome:вашем созвездии
+CotlEnclave:созвездии с вашем анклавом
+TaskActionNewHomeworld:Основать столицу.
+TaskDestroyShip:Уничтожение <Type>: <Val>/<Cnt>. <User>
+TaskBuildShip:Постройка <Type>: <Val>/<Cnt>.
+TaskCapture:Захват планет: <Val>/<Cnt>.
+TaskPlaceShip:Размещение <Type>: <Val>/<Cnt>.
+Ships:кораблей
+Complate:Выполнено
+ErrHoldPlace:Не хватает места в трюме для получения награды!
+Reward:Награда
+RewardExp:Опыт
+RewardMoney:Деньги

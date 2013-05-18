@@ -637,35 +637,20 @@ public class Common
 	static public const DirEmpireMax:int=1;
 	static public const DirEnclaveMax:int=2;
 	static public const DirColonyMax:int=3;
-//	static public const DirPlanetLevelMax:int=4;
 	static public const DirShipMassMax:int=4;
 	static public const DirShipSpeed:int=5;
 	static public const DirPlanetProtect:int=6;
 	static public const DirCaptureSlow:int=7;
-
-//	static public const DirModuleSpeed:int=9;	
-//	static public const DirResSpeed:int=10;
-//	static public const DirSupplyNormal:int=11;
-//	static public const DirSupplyMuch:int=12;
-//	static public const DirModuleMax:int=13;
-//	static public const DirResMax:int=14;
-//	static public const DirCitadelCost:int=15;
-//	static public const DirPlanetLavelCost:int=16;
-
 	static public const DirTransportPrice:int=17;
 	static public const DirTransportCnt:int=18;
-	//static public const DirTransportSupply:int=19;
 	static public const DirTransportMass:int=19;
-//	static public const DirTransportFuel:int=20;
 	static public const DirTransportArmour:int=21;
 	static public const DirTransportWeapon:int=22;
 	static public const DirTransportCargo:int=23;
 
 	static public const DirCorvettePrice:int=25;
 	static public const DirCorvetteCnt:int=26;
-	//static public const DirCorvetteSupply:int=27;
 	static public const DirCorvetteMass:int=27;
-//	static public const DirCorvetteFuel:int=28;
 	static public const DirCorvetteArmour:int=29;
 	static public const DirCorvetteWeapon:int=30;
 	static public const DirCorvetteAccuracy:int=31;
@@ -674,9 +659,7 @@ public class Common
 	static public const DirCruiserAccess:int=33;
 	static public const DirCruiserPrice:int=34;
 	static public const DirCruiserCnt:int=35;
-	//static public const DirCruiserSupply:int=36;
 	static public const DirCruiserMass:int=36;
-//	static public const DirCruiserFuel:int=37;
 	static public const DirCruiserArmour:int=38;
 	static public const DirCruiserWeapon:int=39;
 	static public const DirCruiserAccuracy:int=40;
@@ -684,18 +667,14 @@ public class Common
 	static public const DirDreadnoughtAccess:int=41;
 	static public const DirDreadnoughtPrice:int=42;
 	static public const DirDreadnoughtCnt:int=43;
-	//static public const DirDreadnoughtSupply:int=44;
 	static public const DirDreadnoughtMass:int=44;
-//	static public const DirDreadnoughtFuel:int=45;
 	static public const DirDreadnoughtArmour:int=46;
 	static public const DirDreadnoughtWeapon:int=47;
 	static public const DirDreadnoughtAccuracy:int=48;
 
 	static public const DirInvaderPrice:int=49;
 	static public const DirInvaderCnt:int=50;
-	//static public const DirInvaderSupply:int=51;
 	static public const DirInvaderMass:int=51;
-//	static public const DirInvaderFuel:int=52;
 	static public const DirInvaderArmour:int=53;
 	static public const DirInvaderWeapon:int=54;
 	static public const DirInvaderCaptureSpeed:int=55;
@@ -703,9 +682,7 @@ public class Common
 	static public const DirDevastatorAccess:int=57;
 	static public const DirDevastatorPrice:int=58;
 	static public const DirDevastatorCnt:int=59;
-	//static public const DirDevastatorSupply:int=60;
 	static public const DirDevastatorMass:int=60;
-//	static public const DirDevastatorFuel:int=61;
 	static public const DirDevastatorArmour:int=62;
 	static public const DirDevastatorWeapon:int=63;
 	static public const DirDevastatorAccuracy:int=64;
@@ -714,7 +691,6 @@ public class Common
 	static public const DirWarBaseAccess:int=65;
 	static public const DirWarBasePrice:int=66;
 	static public const DirWarBaseCnt:int=67;
-	//static public const DirWarBaseSupply:int=68;
 	static public const DirWarBaseMass:int=68;
 	static public const DirWarBaseArmour:int=69;
 	static public const DirWarBaseAccuracy:int=70;
@@ -724,7 +700,6 @@ public class Common
 	static public const DirShipyardAccess:int=73;
 	static public const DirShipyardPrice:int=74;
 	static public const DirShipyardCnt:int=75;
-	//static public const DirShipyardSupply:int=76;
 	static public const DirShipyardMass:int=76;
 	static public const DirShipyardArmour:int=77;
 	static public const DirShipyardAccuracy:int=78;
@@ -734,7 +709,6 @@ public class Common
 	static public const DirSciBaseAccess:int=81;
 	static public const DirSciBasePrice:int=82;
 	static public const DirSciBaseCnt:int=83;
-	//static public const DirSciBaseSupply:int=84;
 	static public const DirSciBaseMass:int=84;
 	static public const DirSciBaseArmour:int=85;
 	static public const DirSciBaseAccuracy:int=86;
@@ -742,7 +716,6 @@ public class Common
 	static public const DirSciBaseStabilizer:int=88;  // need
 
     static public const DirQuarkBaseAccess:int=90;
-//	static public const DirQuarkBaseMass:int=91;
 	static public const DirQuarkBaseWeapon:int=92;
 	static public const DirQuarkBaseAccuracy:int=93;
 	static public const DirQuarkBaseArmour:int=94;
@@ -767,16 +740,6 @@ public class Common
 	static public const DirPlanetProtectLvl:Array=[ 0, 2, 4, 6, 8 ];
 	static public const DirPlanetProtectLvlRC:Array=[ 0, 5, 10, 15, 20 ];
 	static public const DirCaptureSlowLvl:Array=[ 0, 25, 50, 75, 100 ];
-
-//	static public const DirModuleSpeedLvl:Array=[ 20,19,18,17,16 ];	
-//	static public const DirResSpeedLvl:Array=[ 100,105,110,115,120 ];
-//	static public const DirResSpeedLvlRC:Array=[ 0,12,25,38,51 ];
-//	static public const DirSupplyNormalLvl:Array=[ 1000, 2000, 4000, 6000, 8000 ];
-//	static public const DirSupplyMuchLvl:Array=[ 30000, 40000, 60000, 80000, 100000 ];
-//	static public const DirModuleMaxLvl:Array=[ 60000, 90000, 130000, 170000, 200000 ];//[ 200000, 500000, 800000, 1100000, 1500000 ];
-//	static public const DirResMaxLvl:Array=[ 100000, 500000, 1000000, 10000000, 30000000 ];
-//	static public const DirCitadelCostLvl:Array=[ 200000, 100000, 50000 ];
-//	static public const DirPlanetLavelCostLvl:Array=[ 300, 260, 220, 170, 150 ];
 	
 	static public const ModuleMaxMul:int=5;
 
@@ -886,127 +849,7 @@ public class Common
 
 	static public const ResearchPeriod:Array=[50,100,150,200,300,500,800,1200,1700,2300,3000,3800,4700];
 
-	static public const DirEmpireMaxDesc:Array=new Array();
-	static public const DirEnclaveMaxDesc:Array=new Array();
-	static public const DirColonyMaxDesc:Array=new Array();
-	//static public const DirPlanetLevelMaxDesc:Array=new Array();
-	static public const DirShipMassMaxDesc:Array = new Array();
-	static public const DirShipSpeedDesc:Array=new Array();
-	static public const DirPlanetProtectDesc:Array=new Array();
-	static public const DirCaptureSlowDesc:Array=new Array();
-
-	//static public const DirModuleSpeedDesc:Array=new Array();	
-	//static public const DirResSpeedDesc:Array=new Array();
-	//static public const DirSupplyNormalDesc:Array=new Array();
-	//static public const DirSupplyMuchDesc:Array=new Array();
-	//static public const DirModuleMaxDesc:Array=new Array();
-	//static public const DirResMaxDesc:Array=new Array();
-	//static public const DirCitadelCostDesc:Array=new Array();
-	//static public const DirPlanetLavelCostDesc:Array=new Array();
-
-	static public const DirTransportPriceDesc:Array=new Array();
-	static public const DirTransportCntDesc:Array=new Array();
-	//static public const DirTransportSupplyDesc:Array=new Array();
-	static public const DirTransportMassDesc:Array=new Array();
-//	static public const DirTransportFuelDesc:Array=new Array();
-	static public const DirTransportArmourDesc:Array=new Array();
-	static public const DirTransportWeaponDesc:Array=new Array();
-	static public const DirTransportCargoDesc:Array=new Array();
-
-	static public const DirCorvettePriceDesc:Array=new Array();
-	static public const DirCorvetteCntDesc:Array=new Array();
-	//static public const DirCorvetteSupplyDesc:Array=new Array();
-	static public const DirCorvetteMassDesc:Array=new Array();
-//	static public const DirCorvetteFuelDesc:Array=new Array();
-	static public const DirCorvetteArmourDesc:Array=new Array();
-	static public const DirCorvetteWeaponDesc:Array=new Array();
-	static public const DirCorvetteAccuracyDesc:Array=new Array();
-	static public const DirCorvetteStealthDesc:Array=new Array();
-
-	static public const DirCruiserAccessDesc:Array=new Array();
-	static public const DirCruiserPriceDesc:Array=new Array();
-	static public const DirCruiserCntDesc:Array=new Array();
-	//static public const DirCruiserSupplyDesc:Array=new Array();
-	static public const DirCruiserMassDesc:Array=new Array();
-//	static public const DirCruiserFuelDesc:Array=new Array();
-	static public const DirCruiserArmourDesc:Array=new Array();
-	static public const DirCruiserWeaponDesc:Array=new Array();
-	static public const DirCruiserAccuracyDesc:Array=new Array();
-
-	static public const DirDreadnoughtAccessDesc:Array=new Array();
-	static public const DirDreadnoughtPriceDesc:Array=new Array();
-	static public const DirDreadnoughtCntDesc:Array=new Array();
-	//static public const DirDreadnoughtSupplyDesc:Array=new Array();
-	static public const DirDreadnoughtMassDesc:Array=new Array();
-//	static public const DirDreadnoughtFuelDesc:Array=new Array();
-	static public const DirDreadnoughtArmourDesc:Array=new Array();
-	static public const DirDreadnoughtWeaponDesc:Array=new Array();
-	static public const DirDreadnoughtAccuracyDesc:Array=new Array();
-
-	static public const DirInvaderPriceDesc:Array=new Array();
-	static public const DirInvaderCntDesc:Array=new Array();
-	//static public const DirInvaderSupplyDesc:Array=new Array();
-	static public const DirInvaderMassDesc:Array=new Array();
-//	static public const DirInvaderFuelDesc:Array=new Array();
-	static public const DirInvaderArmourDesc:Array=new Array();
-	static public const DirInvaderWeaponDesc:Array=new Array();
-	static public const DirInvaderCaptureSpeedDesc:Array=new Array();
-
-	static public const DirDevastatorAccessDesc:Array=new Array();
-	static public const DirDevastatorPriceDesc:Array=new Array();
-	static public const DirDevastatorCntDesc:Array=new Array();
-	//static public const DirDevastatorSupplyDesc:Array=new Array();
-	static public const DirDevastatorMassDesc:Array=new Array();
-//	static public const DirDevastatorFuelDesc:Array=new Array();
-	static public const DirDevastatorArmourDesc:Array=new Array();
-	static public const DirDevastatorWeaponDesc:Array=new Array();
-	static public const DirDevastatorAccuracyDesc:Array=new Array();
-	static public const DirDevastatorBombDesc:Array=new Array();
-
-	static public const DirWarBaseAccessDesc:Array=new Array();
-	static public const DirWarBasePriceDesc:Array=new Array();
-	static public const DirWarBaseCntDesc:Array=new Array();
-	//static public const DirWarBaseSupplyDesc:Array=new Array();
-	static public const DirWarBaseMassDesc:Array=new Array();
-	static public const DirWarBaseArmourDesc:Array=new Array();
-	static public const DirWarBaseAccuracyDesc:Array=new Array();
-	static public const DirWarBaseRepairDesc:Array=new Array();
-	static public const DirWarBaseArmourAllDesc:Array=new Array();
-
-	static public const DirShipyardAccessDesc:Array=new Array();
-	static public const DirShipyardPriceDesc:Array=new Array();
-	static public const DirShipyardCntDesc:Array=new Array();
-	//static public const DirShipyardSupplyDesc:Array=new Array();
-	static public const DirShipyardMassDesc:Array=new Array();
-	static public const DirShipyardArmourDesc:Array=new Array();
-	static public const DirShipyardAccuracyDesc:Array=new Array();
-	static public const DirShipyardRepairDesc:Array=new Array();
-	static public const DirShipyardRepairAllDesc:Array=new Array();
-
-	static public const DirSciBaseAccessDesc:Array=new Array();
-	static public const DirSciBasePriceDesc:Array=new Array();
-	static public const DirSciBaseCntDesc:Array=new Array();
-	//static public const DirSciBaseSupplyDesc:Array=new Array();
-	static public const DirSciBaseMassDesc:Array=new Array();
-	static public const DirSciBaseArmourDesc:Array=new Array();
-	static public const DirSciBaseAccuracyDesc:Array=new Array();
-	static public const DirSciBaseRepairDesc:Array=new Array();
-	static public const DirSciBaseStabilizerDesc:Array=new Array();
-
-	static public const DirQuarkBaseAccessDesc:Array=new Array();
-//	static public const DirQuarkBaseMassDesc:Array=new Array();
-	static public const DirQuarkBaseWeaponDesc:Array=new Array();
-	static public const DirQuarkBaseAccuracyDesc:Array=new Array();
-	static public const DirQuarkBaseArmourDesc:Array=new Array();
-	static public const DirQuarkBaseRepairDesc:Array=new Array();
-	static public const DirQuarkBaseAntiGravitorDesc:Array=new Array();
-	static public const DirQuarkBaseGravWellDesc:Array=new Array();
-	static public const DirQuarkBaseBlackHoleDesc:Array = new Array();
-	static public const DirQuarkBaseHPDesc:Array = new Array();
-	static public const DirQuarkBaseShieldDesc:Array = new Array();
-	static public const DirQuarkBaseShieldReduceDesc:Array = new Array();
-	static public const DirQuarkBaseShieldIncDesc:Array = new Array();
-
+	static public const DirDesc:Array = new Array();
 
 	static public const DirImg:Array=["",
 		"DirEmpireMax","DirEnclaveMax","DirColonyMax","DirPlanetLevelMax"/*"DirPlanetLevelMax"*/,"DirShipSpeed","DirPlanetProtect","DirCaptureSlow","",
@@ -1037,14 +880,6 @@ public class Common
 		,
 
 // Economy
-//		DirModuleSpeed,		DirSupplyNormal,	0,						DirResMax,
-//		DirModuleMax,		DirSupplyNormal,	DirPlanetLavelCost,		DirResSpeed,
-//		DirModuleSpeed,		DirSupplyNormal,	0,						DirResSpeed,
-//		DirModuleMax,		DirSupplyNormal,	DirPlanetLavelCost,		DirResMax,
-//		DirModuleSpeed,		DirSupplyMuch,		DirCitadelCost,			DirResSpeed,
-//		DirModuleMax,		DirSupplyMuch,		DirPlanetLavelCost,		DirResMax,
-//		DirModuleMax,		DirSupplyMuch,		DirCitadelCost,			DirResMax,
-//		DirModuleSpeed,		DirSupplyMuch,		DirPlanetLavelCost,		DirResSpeed
 		0,					0,					0,						0,
 		0,					0,					0,						0,
 		0,					0,					0,						0,
@@ -1639,33 +1474,8 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 
 
 	
-	static public const TxtQuest:Object = {
-		BreakQuestQuery:"Вы действительно хотите отказаться от задания?",
-		Task:"Цель",
-		TaskPlanet:"на <Val> планетах",
-		TaskPlanetNeutral:"нейтральных",
-		TaskPlanetPlayer:"своих",
-		TaskPlanetFriend:"дружественных",
-		TaskPlanetEnemy:"вражеских",
-		In:"в",
-		InCotl:"созвездии",
-		InCotlUser:"созвездии игрока",
-		CotlHome:"вашем созвездии",
-		CotlEnclave:"созвездии с вашем анклавом",
-		TaskActionNewHomeworld:"Основать столицу.",
-		TaskDestroyShip:"Уничтожение <Type>: <Val>/<Cnt>. <User>",
-		TaskBuildShip:"Постройка <Type>: <Val>/<Cnt>.",
-		TaskCapture:"Захват планет: <Val>/<Cnt>.",
-		TaskPlaceShip:"Размещение <Type>: <Val>/<Cnt>.",
-		Ships:"кораблей",
-		Complate:"Выполнено",
-		ErrHoldPlace:"Не хватает места в трюме для получения награды!",
-		Reward:"Награда",
-		RewardExp:"Опыт",
-		RewardMoney:"Деньги"
-	};
+	static public const TxtQuest:Object;
 	
-
 	public static const PlanetAtmName:Array = ["Разряженная", "Водородная", "Углекислотная", "Кислородная", "Азотная"];
 	public static const PlanetTmpName:Array = ["Холодная", "Теплая", "Горячая"];
 	public static const PlanetTecName:Array = ["Пассивная", "Динамическая", "Сейсмическая"];
@@ -2153,43 +1963,8 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 		HintTransport,		"Если привязать транспорты, то тогда они будут автоматически обслуживать планету, перевозя грузы по транспортному маршруту.", 0,
 		HintTransport,		"Если привязанный транспорт не перевозит груз, то скорей всего он не требуется на планетах по транспортному маршруту или просто на планете не хватает места.",0,
 		HintTransport,		"С помощью транспортов и горячей клавиши Ctrl можно извлекать модули из флота.",0
-	];
-	
-	public static const Hist:Object = {
-		Battle:"Битва между игроками [clr]<Owner1>[/clr] и [clr]<Owner2>[/clr].", 
-		Defence:"Защита игрока [clr]<Owner1>[/clr] от игрока [clr]<Owner2>[/clr].", 
-		Period:"Продолжительность", 
-		UserRecv:"Игрок [clr]<Owner>[/clr] заработал [clr]<Score>[/clr] очков боевой славы, а также [clr]<Exp>[/clr] ед. опыта.", 
-		UserLost:"Потери игрока [clr]<Owner>[/clr]", 
-		TransportLost:"Транспортов", 
-		CorvetteLost:"Корветов", 
-		CruiserLost:"Крейсеров", 
-		DreadnoughtLost:"Дредноутов", 
-		InvaderLost:"Штурмовиков", 
-		DevastatorLost:"Девастаторов", 
-		WarBaseLost:"Военных баз", 
-		ShipyardLost:"Верфей", 
-		SciBaseLost:"Научных станций", 
-		FlagshipLost:"Флагманов", 
-		LostFromMine:"Подорванных на минах", 
-		LostFromHack:"Взломанных", 
-		LostShipFromAnnihilation:"Аннигилированных кораблей", 
-		LostBaseFromAnnihilation:"Аннигилированных баз", 
-		PlanetLost:"Планет", 
-		AntimatterLost:"Разграблено антиматерии", 
-		MetalLost:"Разграблено металла", 
-		ElectronicsLost:"Разграблено электроники", 
-		ProtoplasmLost:"Разграблено протоплазмы", 
-		NodesLost:"Разграблено нодов", 
-		Author:"Пишет",
-		Date:"Дата",
-		Sell:"Продажа игроком <User>",
-		Buy:"Покупка игроком <User>",
-		Sack:"Грабёж игроком <User>",
-		Goods:"Товар",
-		GoodsCnt:"Количество",
-		GoodsSum:"Сумма"
-		};
+	];	
+	public static const Hist:Object;
 
 	// (прошло 1,2,5) (через 1,2,5)
 	public static const ScSecond:Array = 	['секунда',	'секунды',	'секунд',			'секунду',	'секунды',	'секунд'];
@@ -2212,191 +1987,11 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 		TxtResInitializator.InitItemName(Resources.ItemName(), ItemName, ItemDesc);
 		TxtResInitializator.InitBuildingName(Resources.BuildingName(), BuildingName, BuildingDesc);
 		TxtResInitializator.InitTechName(Resources.TechName(), TechName);
-		
-		DirName[DirEmpireMax]="Образование"; // Агрокультура Образование
-		DirName[DirEnclaveMax]="Патриотизм";
-		DirName[DirColonyMax]="Воинственность";
-		DirName[DirShipMassMax] = "Логистика";// "Индустриализация";
-		DirName[DirShipSpeed]="Двигатели";
-		DirName[DirPlanetProtect]="Оборона";
-		DirName[DirCaptureSlow]="Сопротивление";
-
-		DirName[DirTransportPrice]="Оптимизация";
-		DirName[DirTransportCnt]="Построение";
-		DirName[DirTransportMass]="Минимизация";
-		DirName[DirTransportArmour]="Броня";
-		DirName[DirTransportWeapon]="Орудия";
-		DirName[DirTransportCargo]="Трюм";
-
-		DirName[DirCorvettePrice]="Оптимизация";
-		DirName[DirCorvetteCnt]="Построение";
-		DirName[DirCorvetteMass]="Минимизация";
-		DirName[DirCorvetteArmour]="Броня";
-		DirName[DirCorvetteWeapon]="Орудия";
-		DirName[DirCorvetteAccuracy]="Точность";
-		DirName[DirCorvetteStealth]="Невидимость";
-
-		DirName[DirCruiserAccess]="Крейсер";
-		DirName[DirCruiserPrice]="Оптимизация";
-		DirName[DirCruiserCnt]="Построение";
-		DirName[DirCruiserMass]="Минимизация";
-		DirName[DirCruiserArmour]="Броня";
-		DirName[DirCruiserWeapon]="Орудия";
-		DirName[DirCruiserAccuracy]="Точность";
-
-		DirName[DirDreadnoughtAccess]="Дредноут";
-		DirName[DirDreadnoughtPrice]="Оптимизация";
-		DirName[DirDreadnoughtCnt]="Построение";
-		DirName[DirDreadnoughtMass]="Минимизация";
-		DirName[DirDreadnoughtArmour]="Броня";
-		DirName[DirDreadnoughtWeapon]="Орудия";
-		DirName[DirDreadnoughtAccuracy]="Точность";
-
-		DirName[DirInvaderPrice]="Оптимизация";
-		DirName[DirInvaderCnt]="Построение";
-		DirName[DirInvaderMass]="Минимизация";
-		DirName[DirInvaderArmour]="Броня";
-		DirName[DirInvaderWeapon]="Орудия";
-		DirName[DirInvaderCaptureSpeed]="Бомбы";
-
-		DirName[DirDevastatorAccess]="Строительство девастаторов";
-		DirName[DirDevastatorPrice]="Оптимизация";
-		DirName[DirDevastatorCnt]="Построение";
-		DirName[DirDevastatorMass]="Минимизация";
-		DirName[DirDevastatorArmour]="Броня";
-		DirName[DirDevastatorWeapon]="Ракеты";
-		DirName[DirDevastatorAccuracy]="Точность";
-		DirName[DirDevastatorBomb]="Аннигиляция";
-
-		DirName[DirWarBaseAccess]="Военная база";
-		DirName[DirWarBasePrice]="Оптимизация";
-		DirName[DirWarBaseCnt]="Построение";
-		DirName[DirWarBaseMass]="Минимизация";
-		DirName[DirWarBaseArmour]="Броня";
-		DirName[DirWarBaseAccuracy]="Точность";
-		DirName[DirWarBaseRepair]="Ремонт";
-		DirName[DirWarBaseArmourAll]="Отражение";
-
-		DirName[DirShipyardAccess]="Верфь";
-		DirName[DirShipyardPrice]="Оптимизация";
-		DirName[DirShipyardCnt]="Построение";
-		DirName[DirShipyardMass]="Минимизация";
-		DirName[DirShipyardArmour]="Броня";
-		DirName[DirShipyardAccuracy]="Точность";
-		DirName[DirShipyardRepair]="Ремонт";
-		DirName[DirShipyardRepairAll]="Бригада дроидов";
-
-		DirName[DirSciBaseAccess]="Научная станция";
-		DirName[DirSciBasePrice]="Оптимизация";
-		DirName[DirSciBaseCnt]="Построение";
-		DirName[DirSciBaseMass]="Минимизация";
-		DirName[DirSciBaseArmour]="Броня";
-		DirName[DirSciBaseAccuracy]="Точность";
-		DirName[DirSciBaseRepair]="Ремонт";
-		DirName[DirSciBaseStabilizer] = "Улучшенный стабилизатор";
-		
-		DirName[DirQuarkBaseAccess]="Гравитационный разрушитель";
-		DirName[DirQuarkBaseWeapon]="Орудия";
-		DirName[DirQuarkBaseAccuracy]="Точность";
-		DirName[DirQuarkBaseArmour]="Броня";
-		DirName[DirQuarkBaseRepair]="Ремонт";
-		DirName[DirQuarkBaseAntiGravitor]="Гравитационный стабилизатор";
-		DirName[DirQuarkBaseGravWell]="Гравитационный колодец";
-		DirName[DirQuarkBaseBlackHole]="Миниатюрная черная дыра";
-		DirName[DirQuarkBaseHP] = "Структура";
-		DirName[DirQuarkBaseShield] = "Щит";
-		DirName[DirQuarkBaseShieldReduce] = "Рассеивание";
-		DirName[DirQuarkBaseShieldInc] = "Регенерация";
-
-		DirPar[DirEmpireMax]="Максимальное количество планет в империи";
-		DirPar[DirEnclaveMax]="Максимальное количество планет в анклаве";
-		DirPar[DirColonyMax]="Максимальное количество колониальных планет";
-		DirPar[DirShipMassMax]="Максимальная масса кораблей";
-		DirPar[DirShipSpeed]="Скорость кораблей";
-		DirPar[DirPlanetProtect]="Броня кораблей возле планет империи";
-		DirPar[DirCaptureSlow]="Сопротивление захвату планет";
-
-		DirPar[DirModuleSpeed]="Скорость производства модулей";	
-		DirPar[DirResSpeed]="Добыча ресурсов";
-		DirPar[DirSupplyNormal]="Эффективное снабжение до";
-		DirPar[DirSupplyMuch]="Удвоенное снабжение после";
-		DirPar[DirModuleMax]="Максимальное количество модулей";
-		DirPar[DirResMax]="Максимальное количество ресурсов";
-		DirPar[DirCitadelCost]="Стоимость основания цитадели";
-		DirPar[DirPlanetLavelCost]="Стоимость инфраструктуры";
-
-		DirPar[DirTransportPrice]="Стоимость";
-		DirPar[DirTransportCnt]="Предел кораблей в звене";
-		DirPar[DirTransportMass]="Масса";
-		DirPar[DirTransportArmour]="Броня";
-		DirPar[DirTransportWeapon]="Ударная сила";
-		DirPar[DirTransportCargo]="Объем перевозимых грузов";
-
-		DirPar[DirCorvettePrice]="Стоимость";
-		DirPar[DirCorvetteCnt]="Предел кораблей в звене";
-		DirPar[DirCorvetteMass]="Масса";
-		DirPar[DirCorvetteArmour]="Броня";
-		DirPar[DirCorvetteWeapon]="Ударная сила";
-		DirPar[DirCorvetteAccuracy]="Ударная сила";
-		DirPar[DirCorvetteStealth]="";
-
-		DirPar[DirCruiserAccess]="";
-		DirPar[DirCruiserPrice]="Стоимость";
-		DirPar[DirCruiserCnt]="Предел кораблей в звене";
-		DirPar[DirCruiserMass]="Масса";
-		DirPar[DirCruiserArmour]="Броня";
-		DirPar[DirCruiserWeapon]="Ударная сила";
-		DirPar[DirCruiserAccuracy]="Ударная сила";
-
-		DirPar[DirDreadnoughtAccess]="";
-		DirPar[DirDreadnoughtPrice]="Стоимость";
-		DirPar[DirDreadnoughtCnt]="Предел кораблей в звене";
-		DirPar[DirDreadnoughtMass]="Масса";
-		DirPar[DirDreadnoughtArmour]="Броня";
-		DirPar[DirDreadnoughtWeapon]="Ударная сила";
-		DirPar[DirDreadnoughtAccuracy]="Ударная сила";
-
-		DirPar[DirInvaderPrice]="Стоимость";
-		DirPar[DirInvaderCnt]="Предел кораблей в звене";
-		DirPar[DirInvaderMass]="Масса";
-		DirPar[DirInvaderArmour]="Броня";
-		DirPar[DirInvaderWeapon]="Ударная сила";
-		DirPar[DirInvaderCaptureSpeed]="Скорость захвата";
-
-		DirPar[DirDevastatorAccess]="";
-		DirPar[DirDevastatorPrice]="Стоимость";
-		DirPar[DirDevastatorCnt]="Предел кораблей в звене";
-		DirPar[DirDevastatorMass]="Масса";
-		DirPar[DirDevastatorArmour]="Броня";
-		DirPar[DirDevastatorWeapon]="Ударная сила";
-		DirPar[DirDevastatorAccuracy]="Ударная сила";
-
-		DirPar[DirWarBaseAccess]="";
-		DirPar[DirWarBasePrice]="Стоимость";
-		DirPar[DirWarBaseCnt]="Предел баз в звене";
-		DirPar[DirWarBaseMass]="Масса";
-		DirPar[DirWarBaseArmour]="Броня";
-		DirPar[DirWarBaseAccuracy]="Ударная сила";
-		DirPar[DirWarBaseRepair]="Ремонт";
-		DirPar[DirWarBaseArmourAll]="Броня всех кораблей на орбите";
-
-		DirPar[DirShipyardAccess]="";
-		DirPar[DirShipyardPrice]="Стоимость";
-		DirPar[DirShipyardCnt]="Предел верфей в звене";
-		DirPar[DirShipyardMass]="Масса";
-		DirPar[DirShipyardArmour]="Броня";
-		DirPar[DirShipyardAccuracy]="Ударная сила";
-		DirPar[DirShipyardRepair]="Ремонт";
-		DirPar[DirShipyardRepairAll]="Ремонт всех кораблей на орбите";
-
-		DirPar[DirSciBaseAccess]="";
-		DirPar[DirSciBasePrice]="Стоимость";
-		DirPar[DirSciBaseCnt]="Предел баз в звене";
-		DirPar[DirSciBaseMass]="Масса";
-		DirPar[DirSciBaseArmour]="Броня";
-		DirPar[DirSciBaseAccuracy]="Ударная сила";
-		DirPar[DirSciBaseRepair]="Ремонт";
-		DirPar[DirSciBaseStabilizer]="Потребление протоплазмы";
+		TxtResInitializator.InitDirName(Resources.DirName(), DirName);
+		TxtResInitializator.InitParName(Resources.ParName(), DirPar);
+		TxtResInitializator.InitDirDesc(Resources.DirDesc(), DirDesc);
+		TxtQuest = TxtResInitializator.InitTxtQuestObject(Resources.TxtQuest());
+		Hist = TxtResInitializator.InitHist(Resources.Hist());
 
 		DirParSuf[DirEmpireMax]="";
 		DirParSuf[DirEnclaveMax]="";
@@ -2417,7 +2012,6 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 		DirParSuf[DirCorvettePrice]="";
 		DirParSuf[DirCorvetteCnt]="";
 		DirParSuf[DirCorvetteMass]="";
-//		DirParSuf[DirCorvetteFuel]="";
 		DirParSuf[DirCorvetteArmour]="%";
 		DirParSuf[DirCorvetteWeapon]="";
 		DirParSuf[DirCorvetteAccuracy]="%";
@@ -2426,9 +2020,7 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 		DirParSuf[DirCruiserAccess]="";
 		DirParSuf[DirCruiserPrice]="";
 		DirParSuf[DirCruiserCnt]="";
-		//DirParSuf[DirCruiserSupply] = "%";
 		DirParSuf[DirCruiserMass] = "";
-//		DirParSuf[DirCruiserFuel]="";
 		DirParSuf[DirCruiserArmour]="%";
 		DirParSuf[DirCruiserWeapon]="";
 		DirParSuf[DirCruiserAccuracy]="%";
@@ -2436,18 +2028,14 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 		DirParSuf[DirDreadnoughtAccess]="";
 		DirParSuf[DirDreadnoughtPrice]="";
 		DirParSuf[DirDreadnoughtCnt]="";
-		//DirParSuf[DirDreadnoughtSupply]="%";
 		DirParSuf[DirDreadnoughtMass]="";
-//		DirParSuf[DirDreadnoughtFuel]="";
 		DirParSuf[DirDreadnoughtArmour]="%";
 		DirParSuf[DirDreadnoughtWeapon]="";
 		DirParSuf[DirDreadnoughtAccuracy]="%";
 
 		DirParSuf[DirInvaderPrice]="";
 		DirParSuf[DirInvaderCnt]="";
-		//DirParSuf[DirInvaderSupply]="%";
 		DirParSuf[DirInvaderMass]="";
-//		DirParSuf[DirInvaderFuel]="";
 		DirParSuf[DirInvaderArmour]="%";
 		DirParSuf[DirInvaderWeapon]="";
 		DirParSuf[DirInvaderCaptureSpeed]="%";
@@ -2455,9 +2043,7 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 		DirParSuf[DirDevastatorAccess]="";
 		DirParSuf[DirDevastatorPrice]="";
 		DirParSuf[DirDevastatorCnt]="";
-		//DirParSuf[DirDevastatorSupply]="%";
 		DirParSuf[DirDevastatorMass]="";
-//		DirParSuf[DirDevastatorFuel]="";
 		DirParSuf[DirDevastatorArmour]="%";
 		DirParSuf[DirDevastatorWeapon]="";
 		DirParSuf[DirDevastatorAccuracy]="%";
@@ -2465,7 +2051,6 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 		DirParSuf[DirWarBaseAccess]="";
 		DirParSuf[DirWarBasePrice]="";
 		DirParSuf[DirWarBaseCnt]="";
-		//DirParSuf[DirWarBaseSupply]="%";
 		DirParSuf[DirWarBaseMass]="";
 		DirParSuf[DirWarBaseArmour]="%";
 		DirParSuf[DirWarBaseAccuracy]="%";
@@ -2475,7 +2060,6 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 		DirParSuf[DirShipyardAccess]="";
 		DirParSuf[DirShipyardPrice]="";
 		DirParSuf[DirShipyardCnt]="";
-		//DirParSuf[DirShipyardSupply] = "%";
 		DirParSuf[DirShipyardMass] = "%";
 		DirParSuf[DirShipyardArmour]="%";
 		DirParSuf[DirShipyardAccuracy]="%";
@@ -2485,156 +2069,10 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 		DirParSuf[DirSciBaseAccess]="";
 		DirParSuf[DirSciBasePrice]="";
 		DirParSuf[DirSciBaseCnt]="";
-		//DirParSuf[DirSciBaseSupply]="%";
 		DirParSuf[DirSciBaseArmour]="%";
 		DirParSuf[DirSciBaseAccuracy]="%";
 		DirParSuf[DirSciBaseRepair]="";
 		DirParSuf[DirSciBaseStabilizer]="%";
-
-		DirEmpireMaxDesc.push("Империя может состоять из <Val> планет.");
-		DirEnclaveMaxDesc.push("Анклав может состоять из <Val> планет.");
-		DirColonyMaxDesc.push("Вы можете иметь <Val> колониальных планет.");
-		//DirPlanetLevelMaxDesc.push("Инфраструктура планет может быть развита до <Val> уровня.");
-		//DirShipMassMaxDesc.push("Каждая планета в империи или анклаве[br]может содержать до <Val> кт кораблей.");
-		DirShipMassMaxDesc.push("Каждая планета в империи/анклаве может содержать до <Val>/<Val2> кт[br]кораблей-атаки и <Val3> кт кораблей-обороны.");
-		DirShipSpeedDesc.push("Корабли развивают <Val>% скорость.");
-		DirPlanetProtectDesc.push("Планеты вашей империи не защищают ваши корабли.");
-		DirPlanetProtectDesc.push("Планеты вашей империи дают <Val>% брони вашим кораблям.");
-		DirCaptureSlowDesc.push("У планет вашей империи нет оборонительных систем.");
-		DirCaptureSlowDesc.push("Захватывать планеты вашей империи противник будет дольше на <Val>%.");
-
-//		DirModuleSpeedDesc.push("Планеты производят модули раз в <Val> секунд.");	
-//		DirResSpeedDesc.push("Добыча ресурсов составляет <Val>%.");
-//		DirSupplyNormalDesc.push("Эффективное снабжение до <Val> кораблей.");
-//		DirSupplyMuchDesc.push("Удвоенное снабжение после <Val> кораблей.");
-//		DirModuleMaxDesc.push("Склады обычных планеты вмещают <Val> модулей.\nСклады столицы и цитадели вмещают  <Val2> модулей.");
-//		DirResMaxDesc.push("Планеты могут хранить <Val> ресурсов каждого типа.");
-//		DirCitadelCostDesc.push("Цитадель можно основать за <Val> ресурсов каждого типа.");
-//		DirPlanetLavelCostDesc.push("Постройка инфраструктуры стоит <Val> модулей.");
-
-		DirTransportPriceDesc.push("Для постройки транспорта требуется <Val> модулей.");
-		DirTransportCntDesc.push("В звене может находиться до <Val> транспортов.");
-		DirTransportMassDesc.push("Масса транспорта составляет <Val> кт.");
-		DirTransportArmourDesc.push("Броня транспортов не уменьшает полученный урон.");
-		DirTransportArmourDesc.push("Броня транспортов уменьшает полученный урон на <Val>%.");
-		DirTransportWeaponDesc.push("Транспорт не наносит урон.");
-		DirTransportWeaponDesc.push("Транспорт наносит <Val> урона в секунду.");
-		DirTransportCargoDesc.push("Транспорт может перевозить до <Val> ед. товара.");
-
-		DirCorvettePriceDesc.push("Для постройки корвета требуется <Val> модулей.");
-		DirCorvetteCntDesc.push("В звене может находиться до <Val> корветов.");
-		DirCorvetteMassDesc.push("Масса корвета составляет <Val> кт.");
-		//DirCorvetteArmourDesc.push("Броня корветов не уменьшает полученный урон.");
-		DirCorvetteArmourDesc.push("Броня корветов уменьшает полученный урон на <Val>%.");
-		DirCorvetteWeaponDesc.push("Корвет наносит <Val> урона в секунду.");
-		//DirCorvetteAccuracyDesc.push("Ударная сила корветов не увеличивается.");
-		DirCorvetteAccuracyDesc.push("Ударная сила корветов увеличивается на <Val>%.");
-		DirCorvetteStealthDesc.push("Технология невидимости корветов - <font color='#ffff00'>не изучена</font>.");
-		DirCorvetteStealthDesc.push("Технология невидимости корветов - <font color='#ffff00'>изучена</font>.");
-
-		DirCruiserAccessDesc.push("Технология строительства крейсеров - <font color='#ffff00'>не изучена</font>.");
-		DirCruiserAccessDesc.push("Технология строительства крейсеров - <font color='#ffff00'>изучена</font>.");
-		DirCruiserPriceDesc.push("Для постройки крейсера требуется <Val> модулей.");
-		DirCruiserCntDesc.push("В звене может находиться до <Val> крейсеров.");
-		DirCruiserMassDesc.push("Масса крейсера составляет <Val> кт.");
-		//DirCruiserArmourDesc.push("Броня крейсеров не уменьшает полученный урон.");
-		DirCruiserArmourDesc.push("Броня крейсеров уменьшает полученный урон на <Val>%.");
-		DirCruiserWeaponDesc.push("Крейсер наносит <Val> урона в секунду.");
-		//DirCruiserAccuracyDesc.push("Ударная сила крейсеров не увеличивается.");
-		DirCruiserAccuracyDesc.push("Ударная сила крейсеров увеличивается на <Val>%.");
-
-		DirDreadnoughtAccessDesc.push("Технология строительства дредноутов - <font color='#ffff00'>не изучена</font>.");
-		DirDreadnoughtAccessDesc.push("Технология строительства дредноутов - <font color='#ffff00'>изучена</font>.");
-		DirDreadnoughtPriceDesc.push("Для постройки дредноута требуется <Val> модулей.");
-		DirDreadnoughtCntDesc.push("В звене может находиться до <Val> дредноутов.");
-		DirDreadnoughtMassDesc.push("Масса дредноута составляет <Val> кт.");
-		//DirDreadnoughtArmourDesc.push("Броня дредноутов не уменьшает полученный урон.");
-		DirDreadnoughtArmourDesc.push("Броня дредноутов уменьшает полученный урон на <Val>%.");
-		DirDreadnoughtWeaponDesc.push("Дредноут наносит <Val> урона в секунду.");
-		//DirDreadnoughtAccuracyDesc.push("Ударная сила дредноутов не увеличивается.");
-		DirDreadnoughtAccuracyDesc.push("Ударная сила дредноутов увеличивается на <Val>%.");
-
-		DirInvaderPriceDesc.push("Для постройки штурмовика требуется <Val> модулей.");
-		DirInvaderCntDesc.push("В звене может находиться до <Val> штурмовиков.");
-		DirInvaderMassDesc.push("Масса штурмовика составляет <Val> кт.");
-		DirInvaderArmourDesc.push("Броня штурмовиков не уменьшает полученный урон.");
-		DirInvaderArmourDesc.push("Броня штурмовиков уменьшает полученный урон на <Val>%.");
-		DirInvaderWeaponDesc.push("Штурмовик не наносит урон.");
-		DirInvaderWeaponDesc.push("Штурмовик наносит <Val> урона в секунду.");
-		DirInvaderCaptureSpeedDesc.push("Захват планет осуществляется с <Val>% скоростью.");
-
-		DirDevastatorAccessDesc.push("Технология строительства девастаторов - <font color='#ffff00'>не изучена</font>.");
-		DirDevastatorAccessDesc.push("Технология строительства девастаторов - <font color='#ffff00'>изучена</font>.");
-		DirDevastatorPriceDesc.push("Для постройки девастатора требуется <Val> модулей.");
-		DirDevastatorCntDesc.push("В звене может находиться до <Val> девастаторов.");
-		DirDevastatorMassDesc.push("Масса девастатора составляет <Val> кт.");
-		DirDevastatorArmourDesc.push("Броня девастаторов не уменьшает полученный урон.");
-		DirDevastatorArmourDesc.push("Броня девастаторов уменьшает полученный урон на <Val>%.");
-		DirDevastatorWeaponDesc.push("Девастатор наносит <Val> урона в секунду.");
-		DirDevastatorAccuracyDesc.push("Ракеты девастаторов попадают в цель с <Val2>% вероятностью.");
-		DirDevastatorAccuracyDesc.push("Ударная сила девастаторов увеличивается на <Val>%,\nпри этом ракеты попадают в цель с <Val2>% вероятностью.");
-		DirDevastatorBombDesc.push("Аннигилирование одного девастатора ведет к\nповреждению <Val> ед. структуры у всех кораблей на орбите.");
-
-		DirWarBaseAccessDesc.push("Технология строительства военных баз - <font color='#ffff00'>не изучена</font>.");
-		DirWarBaseAccessDesc.push("Технология строительства военных баз - <font color='#ffff00'>изучена</font>.");
-		DirWarBasePriceDesc.push("Для постройки военной базы требуется <Val> модулей.");
-		DirWarBaseCntDesc.push("В звене может находиться до <Val> военных баз.");
-		DirWarBaseMassDesc.push("Масса военной базы составляет <Val> кт.");
-		//DirWarBaseArmourDesc.push("Броня военных баз не уменьшает полученный урон.");
-		DirWarBaseArmourDesc.push("Броня военных баз уменьшает полученный урон на <Val>%.");
-		//DirWarBaseAccuracyDesc.push("Ударная сила военных баз не увеличивается.");
-		DirWarBaseAccuracyDesc.push("Ударная сила военных баз увеличивается на <Val>%.");
-		DirWarBaseRepairDesc.push("Военной базой ремонтируется <Val> структуры в секунду\nво время битвы и <Val2> - вне битвы.");
-		DirWarBaseArmourAllDesc.push("Корабли на орбите не получают дополнительную броню.");
-		DirWarBaseArmourAllDesc.push("Все Ваши корабли на орбите получают дополнительно <Val>% брони.");
-
-		DirShipyardAccessDesc.push("Технология строительства верфей - <font color='#ffff00'>не изучена</font>.");
-		DirShipyardAccessDesc.push("Технология строительства верфей - <font color='#ffff00'>изучена</font>.");
-		DirShipyardPriceDesc.push("Для постройки верфи требуется <Val> модулей.");
-		DirShipyardCntDesc.push("В звене может находиться до <Val> верфей.");
-		//DirShipyardSupplyDesc.push("Для снабжения верфи требуется <Val>% ресурсов.");
-		DirShipyardMassDesc.push("Масса верфи составляет <Val> кт.");
-		DirShipyardArmourDesc.push("Броня верфей не уменьшает полученный урон.");
-		DirShipyardArmourDesc.push("Броня верфей уменьшает полученный урон на <Val>%.");
-		DirShipyardAccuracyDesc.push("Ударная сила верфей не увеличивается.");
-		DirShipyardAccuracyDesc.push("Ударная сила верфей увеличивается на <Val>%.");
-		DirShipyardRepairDesc.push("Верфь ремонтирует <Val> структуры в секунду\nво время битвы и <Val2> - вне битвы.");
-		DirShipyardRepairAllDesc.push("Верфь не ремонтирует корабли на орбите.");
-		DirShipyardRepairAllDesc.push("Верфь ремонтирует <Val> структуры в секунду у всех ваших\nкораблей на орбите во время битвы и <Val2> - вне битвы.\nСкорость ремонта баз в 16 раз меньше.");
-
-		DirSciBaseAccessDesc.push("Технология строительства научных станций - <font color='#ffff00'>не изучена</font>.");
-		DirSciBaseAccessDesc.push("Технология строительства научных станций - <font color='#ffff00'>изучена</font>.");
-		DirSciBasePriceDesc.push("Для постройки научной базы требуется <Val> модулей.");
-		DirSciBaseCntDesc.push("В звене может находиться до <Val> научных станций.");
-		//DirSciBaseSupplyDesc.push("Для снабжения научных станций требуется <Val>% ресурсов.");
-		DirSciBaseMassDesc.push("Масса научной станции составляет <Val> кт.");
-		DirSciBaseArmourDesc.push("Броня научных станций не уменьшает полученный урон.");
-		DirSciBaseArmourDesc.push("Броня научных станций уменьшает полученный урон на <Val>%.");
-		DirSciBaseAccuracyDesc.push("Ударная сила научных станций не увеличивается.");
-		DirSciBaseAccuracyDesc.push("Ударная сила научных станций увеличивается на <Val>%.");
-		DirSciBaseRepairDesc.push("Научная станция ремонтирует <Val> структуры в секунду\nво время битвы и <Val2> - вне битвы.");
-		DirSciBaseStabilizerDesc.push("Стабилизатор потребляет <Val>% протоплазмы.");
-
-		DirQuarkBaseAccessDesc.push("Технология строительства разрушителя - [clr]не изучена[/clr].");
-		DirQuarkBaseAccessDesc.push("Технология строительства разрушителя - [clr]изучена[/clr].");
-//		DirQuarkBaseMassDesc.push("Масса разрушителя составляет <Val> кт.");
-		DirQuarkBaseWeaponDesc.push("Разрушитель наносит <Val> урона в секунду.");
-		DirQuarkBaseAccuracyDesc.push("Ударная сила разрушителя не увеличивается.");
-		DirQuarkBaseAccuracyDesc.push("Ударная сила разрушителя увеличивается на <Val>%.");
-		DirQuarkBaseArmourDesc.push("Броня разрушителя не уменьшает полученный урон.");
-		DirQuarkBaseArmourDesc.push("Броня разрушителя уменьшает полученный урон на <Val>%.");
-		DirQuarkBaseRepairDesc.push("Разрушитель ремонтирует <Val> структуры в секунду\nво время битвы и <Val2> - вне битвы.");
-		DirQuarkBaseAntiGravitorDesc.push("Технология гравитационной стабилизации - [clr]не изучена[/clr].");
-		DirQuarkBaseAntiGravitorDesc.push("Разрушитель стабилизирует гравитационное поле раз в <Val> минут.");
-		DirQuarkBaseGravWellDesc.push("Технология гравитационного колодца - [clr]не изучена[/clr].");
-		DirQuarkBaseGravWellDesc.push("Разрушитель создает гравитационный колодец раз в <Val> минут.");
-		DirQuarkBaseBlackHoleDesc.push("Технология миниатюрных черных дыр - [clr]не изучена[/clr].");
-		DirQuarkBaseBlackHoleDesc.push("Разрушитель создает миниатюрную черную дыру раз в <Val> минут.");
-		DirQuarkBaseHPDesc.push("Разрушитель может выдерживать\n <Val> ед. повреждений.");
-		DirQuarkBaseShieldDesc.push("Энергетическое поле блокирует\n <Val> ед. повреждений.");
-		DirQuarkBaseShieldReduceDesc.push("Энергетическое поле получает максимальный урон.");
-		DirQuarkBaseShieldReduceDesc.push("Урон энергетическому полю уменьшается на <Val>%.");
-		DirQuarkBaseShieldIncDesc.push("Энергетическое поле восстанавливает <Val> ед. в секунду\nВ режиме поляризации щита: <Val2> ед. в секунду.");
 
 		TalentName[TalentMove]="Движение";
 		TalentName[TalentDef]="Защита";
@@ -2642,7 +2080,6 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 		TalentName[TalentSys]="Системы";
 		
 		VecName[VecMoveSpeed]="Двигатель";
-//		VecName[VecMoveFuel]="Топливный бак";
 		VecName[VecMoveIntercept]="Перехват";
 		VecName[VecMoveAccelerator]="Ускорение";
 		VecName[VecMovePortal]="Портал";
@@ -2677,7 +2114,6 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 		VecName[VecMoveGravitor]="Гравитор";
 
 		VecMoveSpeedDesc.push("Флагман развивает <Val>% скорость.");
-//		VecMoveFuelDesc.push("Флагман может иметь запас топлива до <Val> ед.");
 		VecMoveInterceptDesc.push("Вражеские корабли могут покинуть орбиту боя.");
 		VecMoveInterceptDesc.push("Вражеские корабли без прикрытия или ускорения\nне могут покинуть орбиту боя за исключением\nорбит звезд.");
 		VecMoveAcceleratorDesc.push("Флагман не может покинуть орбиту боя.");
@@ -2738,11 +2174,6 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 
 		VecMoveGravitorDesc.push("У флагмана отсутствует гравитор.");
             VecMoveGravitorDesc.push("При активации гравитора раз в <Val> минут,\nна орбиту планеты в течение  <font color='#ffff00'><Val2></font> секунд\nне могут выйти корабли.");
-
-//		Hint.FirstNewHomeworld=
-//			"<p align='center'><font size='+1' color='#ffff00'>На данный момент у вас нет империи.</font></p>"
-//			+"<p align='center'>Для основания новой империи выберете подходящую нейтральную планету.</p>"
-//			+"<br><p align='center'><font size='-1' color='#D0D0D0'>(Чтобы сделать это, кликнете кнопкой мышки на планете и выберите пункт \"Столица новой империи\")</font></p>";
 
 		Hint.WaitBeginGame="Сервер подготавливается для начала новой игры.\nПожалуйста, подождите <Val> минут.";
 

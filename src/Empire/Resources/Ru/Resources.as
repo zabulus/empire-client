@@ -21,6 +21,20 @@ package Empire.Resources.Ru
 				return (new m_Txt() as ByteArray).toString();
 			}
 			
+			[Embed(source = "../../../assets/res/ru/TxtQuest.txt", mimeType = "application/octet-stream")]
+			static internal var m_TxtQuest:Class;
+			public static function TxtQuest():String
+			{
+				return (new m_TxtQuest() as ByteArray).toString();
+			}
+			
+			[Embed(source = "../../../assets/res/ru/Hist.txt", mimeType = "application/octet-stream")]
+			static internal var m_Hist:Class;
+			public static function Hist():String
+			{
+				return (new m_Hist() as ByteArray).toString();
+			}
+			
 			[Embed(source = "../../../assets/res/ru/ItemName.txt", mimeType = "application/octet-stream")]
 			static internal var m_ItemName:Class;
 			public static function ItemName():String
@@ -40,6 +54,27 @@ package Empire.Resources.Ru
 			public static function TechName():String
 			{
 				return (new m_TechName() as ByteArray).toString();
+			}
+			
+			[Embed(source="../../../assets/res/ru/ParName.txt", mimeType = "application/octet-stream")]
+			static internal var m_ParName:Class;
+			public static function ParName():String
+			{
+				return (new m_ParName() as ByteArray).toString();
+			}
+			
+			[Embed(source="../../../assets/res/ru/DirName.txt", mimeType = "application/octet-stream")]
+			static internal var m_DirName:Class;
+			public static function DirName():String
+			{
+				return (new m_DirName() as ByteArray).toString();
+			}
+			
+			[Embed(source="../../../assets/res/ru/DirDesc.txt", mimeType = "application/octet-stream")]
+			static internal var m_DirDesc:Class;
+			public static function DirDesc():String
+			{
+				return (new m_DirDesc() as ByteArray).toString();
 			}
 	}
 

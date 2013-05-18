@@ -20,6 +20,35 @@ package Empire.Resources
 			}
 			return ret;
 		}
+		
+		
+		public static function InitTxtQuestObject(embeddedText:String):Object
+		{
+			var ret:Object = new Object();
+			var split:Array = embeddedText.split("\n");
+			for (var i:uint = 0; i < split.length;++i)
+			{
+				var parts:Array = split[i].split(":");
+				parts[0] = StringUtil.trim(parts[0]);
+				parts[1] = StringUtil.trim(parts[1]);
+				ret[parts[0]] = parts[1];
+			}
+			return ret;
+		}
+		public static function InitHist(embeddedText:String):Object
+		{
+			var ret:Object = new Object();
+			var split:Array = embeddedText.split("\n");
+			for (var i:uint = 0; i < split.length;++i)
+			{
+				var parts:Array = split[i].split(":");
+				parts[0] = StringUtil.trim(parts[0]);
+				parts[1] = StringUtil.trim(parts[1]);
+				ret[parts[0]] = parts[1];
+			}
+			return ret;
+		}
+		
 		public static function InitShipName(embeddedText:String, name:Array, nameF:Array, nameCnt:Array, nameDesc:Array):void
 		{
 			var split:Array = embeddedText.split("\n");
@@ -69,7 +98,42 @@ package Empire.Resources
 			for (var i:uint = 0; i < split.length;++i)
 			{
 				var parts:Array = split[i].split("\t");
-				name.push(StringUtil.trim(parts[0]));
+				name[i] = (StringUtil.trim(parts[0]));
+			}
+		}
+		
+		public static function InitDirName(embeddedText:String, dirName:Array):void
+		{
+			var split:Array = embeddedText.split("\n");
+			for (var i:uint = 0; i < split.length; ++i)
+			{
+				var parts:Array = split[i].split("\t");
+				dirName[int(parts[0])] = StringUtil.trim(parts[1]);
+			}
+		}
+		
+		public static function InitParName(embeddedText:String, parName:Array):void
+		{
+			var split:Array = embeddedText.split("\n");
+			for (var i:uint = 0; i < split.length; ++i)
+			{
+				var parts:Array = split[i].split("\t");
+				parName[int(parts[0])] = StringUtil.trim(parts[1]);
+			}
+		}
+		
+		public static function InitDirDesc(embeddedText:String, dirdesc:Array):void
+		{
+			var split:Array = embeddedText.split("\n");
+			for (var i:uint = 0; i < split.length; ++i)
+			{
+				var parts:Array = split[i].split("\t");
+				var dirId:int = int(parts[0]);
+				if (dirdesc[dirId] == null)
+				{
+					dirdesc[dirId] = new Array();
+				}
+				dirdesc[dirId].push(StringUtil.trim(parts[1]));
 			}
 		}
 	}
