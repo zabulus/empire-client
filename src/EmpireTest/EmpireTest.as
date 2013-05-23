@@ -3,6 +3,7 @@ package EmpireTest
 	import Empire.Resources.*;
 	import Empire.Resources.Ru.*;
 	import flash.display.*;
+	import flash.globalization.*;
 	/**
 	 * ...
 	 * @author zab

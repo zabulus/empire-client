@@ -1,0 +1,9 @@
+Load	Загрузка
+ConnectServer	Соединение с сервером
+NoServer	Связь с сервером прервана.
+IncorrectNameOrPassword	Связь с сервером прервана. Неправильное имя или пароль.
+LockIP	Связь с сервером прервана. Ваш IP адрес заблокирован.\nПопробуйте войти через <Val> секунд, когда блокировка будет снята.
+ErrorNo	Ошибка
+ErrorVersion	Неправильная версия клиента.
+FirstNewHomeworld	New Homeworld
+WaitBeginGame	Wait while game begins

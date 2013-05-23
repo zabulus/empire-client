@@ -136,6 +136,48 @@ package Empire.Resources
 				dirdesc[dirId].push(StringUtil.trim(parts[1]));
 			}
 		}
+		
+		public static function InitHint(embeddedText:String):Object
+		{
+			var ret:Object = new Object();
+			var split:Array = embeddedText.split("\n");
+			for (var i:uint = 0; i < split.length;++i)
+			{
+				var parts:Array = split[i].split(":");
+				parts[0] = StringUtil.trim(parts[0]);
+				parts[1] = StringUtil.trim(parts[1]);
+				ret[parts[0]] = parts[1];
+			}
+			return ret;
+		}
+		
+		public static function InitTxtEdit(embeddedText:String):Object
+		{
+			var ret:Object = new Object();
+			var split:Array = embeddedText.split("\n");
+			for (var i:uint = 0; i < split.length;++i)
+			{
+				var parts:Array = split[i].split(":");
+				parts[0] = StringUtil.trim(parts[0]);
+				parts[1] = StringUtil.trim(parts[1]);
+				ret[parts[0]] = parts[1];
+			}
+			return ret;
+		}
+		
+		public static function InitNews(embeddedText:String):Object
+		{
+			var ret:Object = new Object();
+			var split:Array = embeddedText.split("\n");
+			for (var i:uint = 0; i < split.length;++i)
+			{
+				var parts:Array = split[i].split(":");
+				parts[0] = StringUtil.trim(parts[0]);
+				parts[1] = StringUtil.trim(parts[1]);
+				ret[parts[0]] = parts[1];
+			}
+			return ret;
+		}
 	}
 
 }

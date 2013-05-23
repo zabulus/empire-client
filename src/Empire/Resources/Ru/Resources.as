@@ -76,6 +76,27 @@ package Empire.Resources.Ru
 			{
 				return (new m_DirDesc() as ByteArray).toString();
 			}
+			
+			[Embed(source="../../../assets/res/ru/Hint.txt", mimeType = "application/octet-stream")]
+			static internal var m_Hint:Class;
+			public static function Hint():String
+			{
+				return (new m_Hint() as ByteArray).toString();
+			}
+			
+			[Embed(source="../../../assets/res/ru/TxtEdit.txt", mimeType = "application/octet-stream")]
+			static internal var m_TxtEdit:Class;
+			public static function TxtEdit():String
+			{
+				return (new m_TxtEdit() as ByteArray).toString();
+			}
+			
+			[Embed(source="../../../assets/res/ru/TxtEdit.txt", mimeType = "application/octet-stream")]
+			static internal var m_News:Class;
+			public static function News():String
+			{
+				return (new m_News() as ByteArray).toString();
+			}
 	}
 
 }

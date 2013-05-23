@@ -1,0 +1,25 @@
+Export	Продажа <Cnt> <Goods> по цене <Price> cr за <Step> ед. Созвездие игрока <F> (<FUnion>).	
+Import	Покупка <Cnt> <Goods> по цене <Price> cr за <Step> ед. Созвездие игрока <F> (<FUnion>).	
+Export2	Продажа <Cnt> <Goods> по цене <Price> cr за <Step> ед. Созвездие <Cotl>. Игрок <F> (<FUnion>).	
+Import2	Покупка <Cnt> <Goods> по цене <Price> cr за <Step> ед. Созвездие <Cotl>. Игрок <F> (<FUnion>).	
+CombatBegin	Нападение <F> (<FUnion>) на <S> (<SUnion>).	
+DuelBegin	Поединок между <F> (<FUnion>) и <S> (<SUnion>).	
+CombatWinAtk	<F> (<FUnion>) успешно атаковал <S> (<SUnion>).	
+CombatWinDef	<S> (<SUnion>) успешно отразил атаку <F> (<FUnion>).	
+CombatBegin2	Нападение <F> (<FUnion>), <FList> на <S> (<SUnion>), <SList>.	
+DuelBegin2	Поединок между <F> (<FUnion>), <FList> и <S> (<SUnion>), <SList>.	
+CombatWinAtk2	<F> (<FUnion>), <FList> успешно атаковали <S> (<SUnion>), <SList>.	
+CombatWinDef2	<S> (<SUnion>), <SList> успешно отразили атаку <F> (<FUnion>), <FList>.	
+DestroyFlagship1	<F> (<FUnion>) уничтожил флагман капитана <Name1> (<Lvl1>) игрока <S> (<SUnion>).	
+DestroyFlagship2	<F> (<FUnion>) уничтожил флагманы капитанов <Name1> (<Lvl1>), <Name2> (<Lvl2>) игрока <S> (<SUnion>).	
+DestroyFlagship3	<F> (<FUnion>) уничтожил флагманы капитанов <Name1> (<Lvl1>), <Name2> (<Lvl2>), <Name3> (<Lvl3>) игрока <S> (<SUnion>).	
+DestroyQuarkBase	<F> (<FUnion>) уничтожил разрушитель <S> (<SUnion>).	
+CotlCapture	Созвездие <Cotl> захвачено игроком <F> (<FUnion>). Получено <Exp> опыта.	
+CotlCtrl	Альянс <FUnion>, благодаря игроку <F>, установил контроль над созвездием <Cotl>. Получено <Exp> опыта.	
+CotlCtrl2	Альянс <FUnion>, благодаря игроку <F>, забрал контроль над созвездием <Cotl> у альянса <SUnion>. Получено <Exp> опыта.	
+CotlPrepare	Через <Period> минут откроется созвездие <Cotl>. Награда за захват: <Exp> опыта.	
+CotlReady	Открылось созвездие <Cotl>. Награда за захват: <Exp> опыта.	
+HomeworldCapture	Игрок <F> (<FUnion>) захватил столицу игрока <S> (<SUnion>). Получено <Exp> опыта.	
+Invasion	Вторжение игрока <F> (<FUnion>) в созвездие игрока <S> (<SUnion>).	
+Battle	Столкновение между <F> (<FUnion>) и <S> (<SUnion>) в созвездии <Cotl>.	
+Battle2	Столкновение между <F> (<FUnion>) и <S> (<SUnion>) в созвездии игрока <Cotl>.
