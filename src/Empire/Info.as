@@ -289,46 +289,24 @@ public class Info extends Sprite
 //		trace(cntx+" "+cnty);
 	}
 
-	public function CreateHint(t1:int, t2:int=0, t3:int=0):String
+	public function CreateHint(t1:int, t2:int=0, t3:int=0):String // t1, t2, t3 - hint types
 	{
-		var i:int, v:int, bscore:int, bestno:int;
-
-		if (!m_HintNew && (m_HintType == t1 || m_HintType == t2 || m_HintType == t3)) {
-			if (m_HintLast < 0) return "";
-			else return Common.HintList[m_HintLast + 1];
-		}
-		
-		m_HintNew = false;
-		
+		var v:int = 0;
 		if (t2 != 0 && t3 != 0) {
-			v = Math.random() * 100;
-			if (v < 33) v = t1;
-			else if (v < 66) v = t2;
+			v = Math.random() * 3;
+			if (v == 0) v = t1;
+			else if (v == 1) v = t2;
 			else v = t3;
 			
 		} else if (t2 != 0) {
-			v = Math.random() * 100;
-			if (v < 50) v = t1;
-			else v = t2;
-			
+			v = Math.random() * 2;
+			if (v < 0) v = t1;
+			else v = t2;			
 		} else v = t1;
 
-		bestno = -1;
-		for (i = 0; i < Common.HintList.length; i += 3) {
-			if (Common.HintList[i] != v) continue;
-			var score:int = Common.HintList[i + 2];
-
-			if (bestno < 0 || score < bscore) {
-				bestno = i;
-				bscore = score;
-			}
-		}
-		
-		m_HintType = v;
-		m_HintLast = bestno;
-		if (bestno < 0) return "";
-		Common.HintList[bestno + 2]++;
-		return Common.HintList[bestno + 1];
+		var hintArray:Array = Common.HintList[v];		
+		var h:int = Math.random() * hintArray.length;
+		return hintArray[h];
 	}
 
 	public function ShowShipType(owner:uint, race:uint, shiptype:int, shipid:uint, ax:int, ay:int, sx:int, sy:int):void

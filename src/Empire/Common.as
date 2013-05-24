@@ -1444,9 +1444,9 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 
 	static public const TxtMonthForDate:Array = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"];
 
-	static public const News:Object = null;
+	static public const News:Object = new Object();
 	
-	static public const TxtQuest:Object;
+	static public const TxtQuest:Object = new Object();
 	
 	public static const PlanetAtmName:Array = ["Разряженная", "Водородная", "Углекислотная", "Кислородная", "Азотная"];
 	public static const PlanetTmpName:Array = ["Холодная", "Теплая", "Горячая"];
@@ -1531,104 +1531,11 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 	public static const OpsPriceTypeName2:Array = ["none", "Antimatter", "Metal", "Electronics", "Protoplasm", "Nodes", "Fuel", "Module", "EGM", "Cr"];
 	public static const WarningHideTime:int = 4000;
 
-	static public const TxtChat:Object = {
-		LikeLetter:""
-			+"еёe"
-			+",оo"
-			+",аa"
-			+",рp"
-			+",кk"
-			+",хx"
-			+",сc"
-			+",мm"
-		,
-		// [] - необезательно
-		// () - обезательно
-		// {} - вариант предыдущего
-		GoodWord:""
-			+"не[ ]бан"
-			+",оск(о){а}рбля"
-			+",п(о){а}тр(е){и}бля(ют){ть}"
-			+",с[ ]уч(е){ё}т(о){а}м"
-			+",к(о){а}р(а){о}бл"
-			+",к(и){е}н(о){f}т(е){и}атр"
-			+",п(о){а}тр(е){и}бля"
-			+",as[s]asin"
-			+",ас[с]асин"
-			+",рубл"
-			+",страх"
-			+",флаг"
-		,
-		BadWord:""
-			+"с[ц]ук(а){и},с[ц]уч[ь][ка]{ар[а]{ы}}"
-			+",к(о){а}з(е){ё}л,к(о){а}злы"
-			+",урод[ы][ами]"
-			+",нед(о){а}ум[ок][ки]"
-			+",нед(о){а}нос(о){а}к"
-			+",ублюд[о]{а}(к){ч[ь][е]{к[а]{и}}{ный}}[и][ам][и]"
-			+",пр(и){е}дур[ок]{к[и]{а}}"
-			+",д(и){е}бил[а][ы][оид[ы]]"
-			+",др(о){а}ч[ь][ил[к][а]{и}][ит[ь]][и]"
-			+",[на]{от}ху(й){и}{е}[ня]{я}{ло}{сос},[на]хуя[рил[и]{а}]"
-			+",[от]п(и){е}{ё}(з){с}д[а][(и){е}ть]"
-			+",п(и){е}{ё}д(о){а}р[ас[ы]]{юг(а){и}}{ч(у){а}г}"
-			+",п(и){е}{ё}рд(ун[ы]{а}){нут[ь]}{ет[ь]}"
-			+",педик,педри"
-			+",муд(а){о}к[а]{и}"
-			+",[от]{аб}{об}(и){е}{ё}б(ат[ь]){(а){о}н[ут]{ен}{ин}[ый]}"
-			+",трах[ат[ь]]"
-			+",г(о){а}вн(о){а}"
-			+",жоп(о){а}"
-			+",п(е){ё}р[д]нут[ь],п(е){ё}рд(н[ул]{и}){и}{(е){ё}[ж][ь]}"
-			+",б[е]{ё}зднут[ь]"
-			+",бля[д[ь]][т[ь]]"
-			+",[по]{от}хер[ня]"
-			+",з(о){а}луп(а){ы}"
-			+",нахуя" // нах - нельзя. так как: находит
-			+",г(а){о}ндон[ы]"
-			+",пох(р){у}" // пох - нельзя. так как походный
-			+",с(о){а}си"
-			+",ид(и){е}{ё}от"
-			+",suk(a){i},such"
-			+",засал[и]"
-			+",idiot,urod,mudak"
-			+",pid(a){o}r"
-			+",g(a){o}ndon"
-			+",k(o){a}zel"
-			+",pridur(o){a}k"
-			+",p(i){e}zd(a){u}"
-			+",f(u){a}ck[of]"
-			+",shit,shite,shat"
-		,
-		LostConnection:"Связь с сервером потеряна",
-		PageMain:"Чат",
-		PageRename:"Переименовать",
-		PageAdd:"Добавить",
-		PageDelete:"Удалить",
-		RenameCaption:"Название странички чата",
-		AddCaption:"Название новой странички чата",
-		Channels:"Каналы",
-		SilentAll:"Вам запрещено писать в чате.",
-		SilentCommon:"Вам запрещено писать <Val> в публичных каналах чата.",
-		Silent:"Безмолвие",
-		SilentCaption:"Минут, в течение которых игрок не\nсможет писать в текущем канале:",
-		SilentTail:"0 - снять безмолвие с игрока.",
-		UserList:"Список игроков",
-		UserListOnlineName:"Онлайн (по алфавиту)",
-		UserListOnlineDate:"Онлайн (по времени)",
-		UserListOnlineUnion:"Альянс",
-		UserListOnlineNutral:"Нейтральные",
-		UserListIgnore:"Игнорируемые",
-		Ignore:"Игнорировать",
-		IgnoreOut:"Удалить из списка",
-		IgnoreGeneral:"Игнорировать: Общий чат",
-		IgnoreClan:"Игнорировать: Альянсовый чат",
-		IgnoreWhisper:"Игнорировать: Личные сообщения"
-	};
+	static public const TxtChat:Object = new Object();
 
-	static public const TxtEdit:Object = null;
+	static public const TxtEdit:Object = new Object();
 
-	static public const Hint:Object = null;
+	static public const Hint:Object = new Object();
 	
 	public static const HintWormhole:int = 1;
 	public static const HintWormholeRoam:int = 2;
@@ -1641,40 +1548,8 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 	public static const HintGigant:int = 9;
 	public static const HintTiny:int = 10;
 
-	public static const HintList:Array = [
-		HintWormhole,		"Через червоточины могут проходить корабли.",0,
-		HintWormhole,		"Если поблизости есть занятые планеты, то из червоточин появляются клисаны.",0,
-		HintWormhole,		"Чем больше занятых планет, тем больше клисан.", 0,
-		HintWormholeRoam,	"Блуждающие червоточины открываются в наименее защищенном месте созвездия.", 0,
-		HintWormholeRoam,	"На орбиту открытой блуждающей червоточины всегда могут выходить корабли из флота.", 0,
-		HintSun,			"Во время битвы корабли могут покинуть орбиту звезды.", 0,
-		HintSun,			"Если активирован гравитор, то невозможно покинуть орбиту где идет бой.", 0,
-		HintPulsar,			"Если на орбите пульсара разместить научную базу и активировать гравитор, то тогда на ее орбиту не сможет выйти ни один корабль.", 0,
-		HintGigant,			"С газового гиганта сервисная платформа может добывать водород.", 0,
-		HintGigant,			"Чтобы построить сервисную платформу нужно разместить на орбите транспорты с модулями.", 0,
-		HintGigant,			"Во время битвы корабли могут покинуть орбиту газового гиганта, если нет вражеского флагмана с перехватом.", 0,
-		HintGigant,			"Если активирован гравитор, то невозможно покинуть орбиту где идет бой.", 0,
-		HintTiny,			"Во время битвы корабли могут покинуть орбиту карликовой планеты, если нет вражеского флагмана с перехватом.", 0,
-		HintTiny,			"Если активирован гравитор, то невозможно покинуть орбиту где идет бой.", 0,
-		HintPlanetNormal,	"Между планетами можно проложить транспортный маршрут. Для этого нужно кликнуть по планете и протянуть линию до другой планеты.", 0,
-		HintPlanetNormal,	"Транспортный маршрут предназначен для автоматической перевозки товаров с помощью транспортов.", 0,
-		HintPlanetNormal,	"Если на обитаемой или малой планете находится военная база в боевом режиме, то орбиту боя не могут покинуть корветы и девастаторы.", 0,
-		HintPlanetNormal,	"Если активирован гравитор, то невозможно покинуть орбиту где идет бой.", 0,
-		HintKling,			"Против клисан эффективно строить военные базы.",0,
-		HintKling,			"Если вы не справляетесь с клисанами, то уменьшите количество захваченных планет.",0,
-		HintKling,			"Клисаны летят на ту планету, где больше звеньев кораблей.",0,
-		HintKling,			"В первую очередь клисаны летят на самый большой анклав.",0,
-		HintShip,			"Кликнув по кораблю и при этом удерживая кнопку мышки, можно указать орбитальный слот в который полетит корабль.",0,
-		HintShip,			"Ctrl - разделить эскадру.",0,
-		HintShip,			"Ctrl - прокладка маршрута.",0,
-		HintShip,			"Пробел - горячая клавиша быстрого перемещения кораблей во флот.",0,
-		HintShip,			"1,2,3,4,5,6 - горячие клавиши быстрого извлечения кораблей из флота.",0,
-		HintShip,			"Звено кораблей можно привязать к планете, тогда оно будет автоматически выполнять свою основную функцию.",0,
-		HintTransport,		"Если привязать транспорты, то тогда они будут автоматически обслуживать планету, перевозя грузы по транспортному маршруту.", 0,
-		HintTransport,		"Если привязанный транспорт не перевозит груз, то скорей всего он не требуется на планетах по транспортному маршруту или просто на планете не хватает места.",0,
-		HintTransport,		"С помощью транспортов и горячей клавиши Ctrl можно извлекать модули из флота.",0
-	];	
-	public static const Hist:Object;
+	public static const HintList:Dictionary = new Dictionary();
+	public static const Hist:Object = new Object();
 
 	// (прошло 1,2,5) (через 1,2,5)
 	public static const ScSecond:Array = 	['секунда',	'секунды',	'секунд',			'секунду',	'секунды',	'секунд'];
@@ -1688,11 +1563,11 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 	public static const ChangeWordForNews2:Dictionary = new Dictionary();
 	public static const ChangeWordForNews5:Dictionary = new Dictionary();
 
-	public static var Txt:Object = null;
+	public static const Txt:Object = new Object();
 	
 	public static function LangInitRus():void
 	{		
-		Txt = TxtResInitializator.InitTxtObject(Resources.Txt());
+		TxtResInitializator.InitTxtObject(Resources.Txt(), Txt);
 		TxtResInitializator.InitShipName(Resources.ShipName(), ShipName, ShipNameM, ShipNameForCnt, ShipDesc);
 		TxtResInitializator.InitItemName(Resources.ItemName(), ItemName, ItemDesc);
 		TxtResInitializator.InitBuildingName(Resources.BuildingName(), BuildingName, BuildingDesc);
@@ -1700,11 +1575,13 @@ static public const ShipHitPriorCorvette:Array =[   0,      8,                  
 		TxtResInitializator.InitDirName(Resources.DirName(), DirName);
 		TxtResInitializator.InitParName(Resources.ParName(), DirPar);
 		TxtResInitializator.InitDirDesc(Resources.DirDesc(), DirDesc);
-		TxtQuest = TxtResInitializator.InitTxtQuestObject(Resources.TxtQuest());
-		Hist = TxtResInitializator.InitHist(Resources.Hist());
-		Hint = TxtResInitializator.InitHint(Resources.Hint());
-		TxtEdit = TxtResInitializator.InitHint(Resources.TxtEdit());
-		News = TxtResInitializator.InitNews(Resources.News());
+		TxtResInitializator.InitTxtQuestObject(Resources.TxtQuest(), TxtQuest);
+		TxtResInitializator.InitHist(Resources.Hist(), Hist);
+		TxtResInitializator.InitHint(Resources.Hint(), Hint);
+		TxtResInitializator.InitTxtEdit(Resources.TxtEdit(), TxtEdit);
+		TxtResInitializator.InitNews(Resources.News(), News);
+		TxtResInitializator.InitTxtChat(Resources.TxtChat(), TxtChat);
+		TxtResInitializator.InitHintList(Resources.HintList(), HintList);
 
 		DirParSuf[DirEmpireMax]="";
 		DirParSuf[DirEnclaveMax]="";

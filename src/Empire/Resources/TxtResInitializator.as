@@ -1,5 +1,6 @@
 package Empire.Resources 
 {
+	import flash.utils.Dictionary;
 	import mx.utils.StringUtil;
 	/**
 	 * ...
@@ -7,46 +8,40 @@ package Empire.Resources
 	 */
 	public class TxtResInitializator 
 	{
-		public static function InitTxtObject(embeddedText:String):Object
+		public static function InitTxtObject(embeddedText:String, ret:Object):void
 		{
-			var ret:Object = new Object();
 			var split:Array = embeddedText.split("\n");
 			for (var i:uint = 0; i < split.length;++i)
 			{
-				var parts:Array = split[i].split(":");
+				var parts:Array = split[i].split("\t");
 				parts[0] = StringUtil.trim(parts[0]);
 				parts[1] = StringUtil.trim(parts[1]);
 				ret[parts[0]] = parts[1];
 			}
-			return ret;
 		}
 		
 		
-		public static function InitTxtQuestObject(embeddedText:String):Object
+		public static function InitTxtQuestObject(embeddedText:String, ret:Object):void
 		{
-			var ret:Object = new Object();
 			var split:Array = embeddedText.split("\n");
 			for (var i:uint = 0; i < split.length;++i)
 			{
-				var parts:Array = split[i].split(":");
+				var parts:Array = split[i].split("\t");
 				parts[0] = StringUtil.trim(parts[0]);
 				parts[1] = StringUtil.trim(parts[1]);
 				ret[parts[0]] = parts[1];
 			}
-			return ret;
 		}
-		public static function InitHist(embeddedText:String):Object
+		public static function InitHist(embeddedText:String, ret:Object):void
 		{
-			var ret:Object = new Object();
 			var split:Array = embeddedText.split("\n");
 			for (var i:uint = 0; i < split.length;++i)
 			{
-				var parts:Array = split[i].split(":");
+				var parts:Array = split[i].split("\t");
 				parts[0] = StringUtil.trim(parts[0]);
 				parts[1] = StringUtil.trim(parts[1]);
 				ret[parts[0]] = parts[1];
 			}
-			return ret;
 		}
 		
 		public static function InitShipName(embeddedText:String, name:Array, nameF:Array, nameCnt:Array, nameDesc:Array):void
@@ -137,46 +132,69 @@ package Empire.Resources
 			}
 		}
 		
-		public static function InitHint(embeddedText:String):Object
+		public static function InitHint(embeddedText:String, ret:Object):void
 		{
-			var ret:Object = new Object();
 			var split:Array = embeddedText.split("\n");
 			for (var i:uint = 0; i < split.length;++i)
 			{
-				var parts:Array = split[i].split(":");
+				var parts:Array = split[i].split("\t");
 				parts[0] = StringUtil.trim(parts[0]);
 				parts[1] = StringUtil.trim(parts[1]);
 				ret[parts[0]] = parts[1];
 			}
-			return ret;
 		}
 		
-		public static function InitTxtEdit(embeddedText:String):Object
+		public static function InitTxtEdit(embeddedText:String, ret:Object):void
 		{
-			var ret:Object = new Object();
 			var split:Array = embeddedText.split("\n");
 			for (var i:uint = 0; i < split.length;++i)
 			{
-				var parts:Array = split[i].split(":");
+				var parts:Array = split[i].split("\t");
 				parts[0] = StringUtil.trim(parts[0]);
 				parts[1] = StringUtil.trim(parts[1]);
 				ret[parts[0]] = parts[1];
 			}
-			return ret;
 		}
 		
-		public static function InitNews(embeddedText:String):Object
+		public static function InitNews(embeddedText:String, ret:Object):void
 		{
-			var ret:Object = new Object();
 			var split:Array = embeddedText.split("\n");
 			for (var i:uint = 0; i < split.length;++i)
 			{
-				var parts:Array = split[i].split(":");
+				var parts:Array = split[i].split("\t");
 				parts[0] = StringUtil.trim(parts[0]);
 				parts[1] = StringUtil.trim(parts[1]);
 				ret[parts[0]] = parts[1];
 			}
-			return ret;
+		}		
+		
+		public static function InitTxtChat(embeddedText:String, ret:Object):void
+		{
+			var split:Array = embeddedText.split("\n");
+			for (var i:uint = 0; i < split.length;++i)
+			{
+				var parts:Array = split[i].split("\t");
+				parts[0] = StringUtil.trim(parts[0]);
+				parts[1] = StringUtil.trim(parts[1]);
+				ret[parts[0]] = parts[1];
+			}
+		}
+		
+		public static function InitHintList(embeddedText:String, ret:Dictionary):void
+		{
+			var split:Array = embeddedText.split("\n");
+			for (var i:uint = 0; i < split.length;++i)
+			{
+				var parts:Array = split[i].split("\t");
+				parts[0] = StringUtil.trim(parts[0]);
+				parts[1] = StringUtil.trim(parts[1]);
+				var j:int = int(parts[0]);
+				if (ret[j] == null)
+				{
+					ret[j] = new Array();
+				}
+				ret[j].push(parts[1]);
+			}
 		}
 	}
 

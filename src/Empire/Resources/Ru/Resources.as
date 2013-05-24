@@ -91,11 +91,25 @@ package Empire.Resources.Ru
 				return (new m_TxtEdit() as ByteArray).toString();
 			}
 			
-			[Embed(source="../../../assets/res/ru/TxtEdit.txt", mimeType = "application/octet-stream")]
+			[Embed(source="../../../assets/res/ru/News.txt", mimeType = "application/octet-stream")]
 			static internal var m_News:Class;
 			public static function News():String
 			{
 				return (new m_News() as ByteArray).toString();
+			}
+			
+			[Embed(source="../../../assets/res/ru/TxtChat.txt", mimeType = "application/octet-stream")]
+			static internal var m_TxtChat:Class;
+			public static function TxtChat():String
+			{
+				return (new m_TxtChat() as ByteArray).toString();
+			}
+			
+			[Embed(source="../../../assets/res/ru/HintList.txt", mimeType = "application/octet-stream")]
+			static internal var m_HintList:Class;
+			public static function HintList():String
+			{
+				return (new m_HintList() as ByteArray).toString();
 			}
 	}
 

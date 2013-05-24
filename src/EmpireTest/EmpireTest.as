@@ -1,5 +1,7 @@
 package EmpireTest
 {
+	import Empire.Common;
+	import Empire.Info;
 	import Empire.Resources.*;
 	import Empire.Resources.Ru.*;
 	import flash.display.*;
@@ -18,7 +20,6 @@ package EmpireTest
 			var name3:Array = new Array();
 			var name4:Array = new Array();
 			TxtResInitializator.InitShipName(Resources.ShipName(), name, name2, name3, name4);
-			
 		}		
 		public function Main() :void
 		{

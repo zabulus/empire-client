@@ -1,33 +1,33 @@
- Battle:Битва между игроками [clr]<Owner1>[/clr] и [clr]<Owner2>[/clr]. 
-Defence:Защита игрока [clr]<Owner1>[/clr] от игрока [clr]<Owner2>[/clr]. 
-Period:Продолжительность 
-UserRecv:Игрок [clr]<Owner>[/clr] заработал [clr]<Score>[/clr] очков боевой славы, а также [clr]<Exp>[/clr] ед. опыта. 
-UserLost:Потери игрока [clr]<Owner>[/clr] 
-TransportLost:Транспортов 
-CorvetteLost:Корветов 
-CruiserLost:Крейсеров 
-DreadnoughtLost:Дредноутов 
-InvaderLost:Штурмовиков 
-DevastatorLost:Девастаторов 
-WarBaseLost:Военных баз 
-ShipyardLost:Верфей 
-SciBaseLost:Научных станций 
-FlagshipLost:Флагманов 
-LostFromMine:Подорванных на минах 
-LostFromHack:Взломанных 
-LostShipFromAnnihilation:Аннигилированных кораблей 
-LostBaseFromAnnihilation:Аннигилированных баз 
-PlanetLost:Планет 
-AntimatterLost:Разграблено антиматерии 
-MetalLost:Разграблено металла 
-ElectronicsLost:Разграблено электроники 
-ProtoplasmLost:Разграблено протоплазмы 
-NodesLost:Разграблено нодов 
-Author:Пишет"
-Date:Дата"
-Sell:Продажа игроком <User>
-Buy:Покупка игроком <User>
-Sack:Грабёж игроком <User>
-Goods:Товар
-GoodsCnt:Количество
-GoodsSum:Сумма
+Battle	Битва между игроками [clr]<Owner1>[/clr] и [clr]<Owner2>[/clr]. 
+Defence	Защита игрока [clr]<Owner1>[/clr] от игрока [clr]<Owner2>[/clr]. 
+Period	Продолжительность 
+UserRecv	Игрок [clr]<Owner>[/clr] заработал [clr]<Score>[/clr] очков боевой славы, а также [clr]<Exp>[/clr] ед. опыта. 
+UserLost	Потери игрока [clr]<Owner>[/clr] 
+TransportLost	Транспортов 
+CorvetteLost	Корветов 
+CruiserLost	Крейсеров 
+DreadnoughtLost	Дредноутов 
+InvaderLost	Штурмовиков 
+DevastatorLost	Девастаторов 
+WarBaseLost	Военных баз 
+ShipyardLost	Верфей 
+SciBaseLost	Научных станций 
+FlagshipLost	Флагманов 
+LostFromMine	Подорванных на минах 
+LostFromHack	Взломанных 
+LostShipFromAnnihilation	Аннигилированных кораблей 
+LostBaseFromAnnihilation	Аннигилированных баз 
+PlanetLost	Планет 
+AntimatterLost	Разграблено антиматерии 
+MetalLost	Разграблено металла 
+ElectronicsLost	Разграблено электроники 
+ProtoplasmLost	Разграблено протоплазмы 
+NodesLost	Разграблено нодов 
+Author	Пишет"
+Date	Дата"
+Sell	Продажа игроком <User>
+Buy	Покупка игроком <User>
+Sack	Грабёж игроком <User>
+Goods	Товар
+GoodsCnt	Количество
+GoodsSum	Сумма
