@@ -291,6 +291,13 @@ public class Info extends Sprite
 
 	public function CreateHint(t1:int, t2:int=0, t3:int=0):String // t1, t2, t3 - hint types
 	{
+		if (!m_HintNew)
+		{			
+			var hintArrayOld:Array = Common.HintList[m_HintType];
+		    return hintArrayOld[m_HintLast];
+		}
+		m_HintNew = false;
+		
 		var v:int = 0;
 		if (t2 != 0 && t3 != 0) {
 			v = Math.random() * 3;
@@ -303,9 +310,12 @@ public class Info extends Sprite
 			if (v < 0) v = t1;
 			else v = t2;			
 		} else v = t1;
-
-		var hintArray:Array = Common.HintList[v];		
-		var h:int = Math.random() * hintArray.length;
+		
+		var hintArray:Array = Common.HintList[v];
+		
+		var h:int= Math.random() * hintArray.length;
+			m_HintLast = h;
+			m_HintType = v;
 		return hintArray[h];
 	}
 
