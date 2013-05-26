@@ -23,8 +23,8 @@ MetalLost	Разграблено металла
 ElectronicsLost	Разграблено электроники 
 ProtoplasmLost	Разграблено протоплазмы 
 NodesLost	Разграблено нодов 
-Author	Пишет"
-Date	Дата"
+Author	Пишет
+Date	Дата
 Sell	Продажа игроком <User>
 Buy	Покупка игроком <User>
 Sack	Грабёж игроком <User>
